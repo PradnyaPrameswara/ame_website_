@@ -1,0 +1,38 @@
+---
+import AnimatedLink from "../ui/AnimatedLink.astro";
+import { operations } from "../../data/content";
+---
+
+<section class="operations" aria-labelledby="operations-title" data-operations>
+  <div class="operations__sticky">
+    <p class="operations__intro" id="operations-title">Creative direction, to us, is hands-on. It means understanding what moves a story forward:</p>
+    <div class="operations__words" aria-live="off">
+      {operations.map((word, index) => <span class:list={{ "is-active": index === 0 }} data-operation-word>{word}</span>)}
+    </div>
+    <p class="operations__aside">(And logistics? That’s our love language, too.)</p>
+    <AnimatedLink href="#trust" label="See our work" />
+  </div>
+</section>
+
+<style>
+  .operations { position: relative; height: calc(4 * 72svh); padding: 0 var(--page-gutter); background: var(--white); }
+  .operations__sticky { position: sticky; top: 0; display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: auto 1fr auto; gap: 2rem; height: 100svh; align-items: center; overflow: hidden; padding-block: 8vh; background: var(--white); }
+  .operations__intro { align-self: start; max-width: 17rem; font-size: .78rem; line-height: 1.3; text-transform: uppercase; }
+  .operations__words { position: relative; height: clamp(6rem, 13vw, 13rem); overflow: hidden; }
+  .operations__words span { position: absolute; inset: 0; display: flex; align-items: center; color: var(--accent); font: 800 clamp(4rem, 10.5vw, 12rem)/.78 var(--font-display); letter-spacing: -.075em; text-transform: uppercase; white-space: nowrap; opacity: 0; visibility: hidden; }
+  .operations__words span.is-active { opacity: 1; visibility: visible; }
+  .operations__aside { grid-column: 2; align-self: end; font-size: clamp(1.2rem, 2vw, 2.2rem); }
+  .operations :global(.animated-link) { align-self: end; }
+  @media (min-width: 64rem) {
+    .operations { height: 100svh; }
+    .operations__sticky { position: relative; top: auto; height: 100svh; }
+  }
+  @media (max-width: 63.99rem) {
+    .operations { height: auto; padding-block: 7rem; }
+    .operations__sticky { position: relative; top: auto; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; height: auto; min-height: 0; overflow: visible; padding-block: 0; }
+    .operations__words { display: grid; height: auto; overflow: visible; }
+    .operations__words span { position: relative; inset: auto; padding-block: .12em; border-bottom: 1px solid #17171725; white-space: normal; transform: none; opacity: 1 !important; visibility: visible !important; }
+    .operations__aside { grid-column: 1; margin-top: 2rem; }
+  }
+  @media (max-width: 47.99rem) { .operations__words span { font-size: 15vw; } }
+</style>

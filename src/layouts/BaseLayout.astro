@@ -1,0 +1,68 @@
+---
+import "@fontsource-variable/archivo/wght.css";
+import "@fontsource-variable/manrope/wght.css";
+import "@fontsource/instrument-serif/400.css";
+import "swiper/css";
+import "../styles/globals.css";
+import { getImage } from "astro:assets";
+import shareArtwork from "../assets/images/kinetic-portrait.png";
+import { ClientRouter } from "astro:transitions";
+import PageLoader from "../components/layout/PageLoader.astro";
+import PageTransition from "../components/layout/PageTransition.astro";
+import MobileLandscapeCover from "../components/layout/MobileLandscapeCover.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const shareImage = await getImage({ src: shareArtwork, width: 1200, height: 630, fit: "cover", format: "webp", quality: 82 });
+const shareImageUrl = new URL(shareImage.src, Astro.site);
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AME Creative Studio",
+  url: Astro.site,
+  email: "hello@ame-studio.example",
+  description,
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <script is:inline>document.documentElement.classList.add("has-js");</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={shareImageUrl} />
+    <meta property="og:image:alt" content="A dancer in red moving through a cobalt architectural set" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={shareImageUrl} />
+    <meta name="theme-color" content="#ffffff" />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(schema)} />
+    <title>{title}</title>
+    <ClientRouter />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <MobileLandscapeCover />
+    <PageLoader />
+    <PageTransition />
+    <slot />
+    <script>
+      import "../scripts/site";
+    </script>
+  </body>
+</html>

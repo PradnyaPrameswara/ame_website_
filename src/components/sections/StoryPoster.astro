@@ -1,0 +1,102 @@
+<section
+  class="about_home_section"
+  aria-labelledby="about-home-heading"
+  data-about-heading-section
+>
+  <div class="about_home_container">
+    <div class="about_home_text_mask">
+      <h2
+        class="about_home_heading"
+        id="about-home-heading"
+        data-about-heading
+      >
+        <span class="about_home_line">WE GREW FOR</span>{" "}
+        <span class="about_home_line">NINE YEARS</span>{" "}
+        <span class="about_home_line">WITHOUT A WEBSITE,</span>{" "}
+        <span class="about_home_line">BECAUSE WE DIDN’T</span>{" "}
+        <span class="about_home_line">NEED ONE</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about_home_section {
+    position: relative;
+    display: flex;
+    min-height: 74svh;
+    align-items: center;
+    padding: clamp(48px, 8vh, 110px) clamp(16px, 2vw, 32px);
+    overflow: clip;
+    background: #fff;
+  }
+
+  .about_home_container {
+    width: 100%;
+  }
+
+  .about_home_text_mask {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about_home_heading {
+    width: min(94vw, 1500px);
+    margin: 0 auto;
+    color: #d9e3e9;
+    font-family: "Archivo Variable", "Arial Black", Arial, sans-serif;
+    font-size: clamp(56px, 7.4vw, 132px);
+    font-weight: 780;
+    line-height: .86;
+    letter-spacing: -.045em;
+    text-align: center;
+    text-transform: uppercase;
+    text-wrap: balance;
+    will-change: transform, opacity;
+  }
+
+  .about_home_line {
+    display: block;
+  }
+
+  @media (max-width: 63.99rem) {
+    .about_home_section {
+      min-height: 72svh;
+    }
+
+    .about_home_heading {
+      width: 96vw;
+      font-size: clamp(52px, 8vw, 84px);
+      line-height: .89;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .about_home_section {
+      min-height: 68svh;
+      padding: clamp(48px, 8vh, 72px) 16px;
+    }
+
+    .about_home_heading {
+      width: 100%;
+      font-size: clamp(38px, 11vw, 64px);
+      line-height: .93;
+      letter-spacing: -.04em;
+      text-wrap: pretty;
+    }
+
+    .about_home_line {
+      display: inline;
+    }
+
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .about_home_heading {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+      will-change: auto;
+    }
+  }
+</style>

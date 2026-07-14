@@ -1,0 +1,21 @@
+<div class="page-loader" data-page-loader aria-hidden="true">
+  <div class="page-loader__panel"></div>
+  <div class="page-loader__content">
+    <span>AME</span>
+    <span>Independent creative studio</span>
+    <i class="page-loader__spinner" aria-hidden="true"></i>
+  </div>
+</div>
+
+<style>
+  .page-loader { position: fixed; inset: 0; z-index: 999; display: none; overflow: hidden; color: var(--paper); pointer-events: none; }
+  :global(.has-js) .page-loader { display: grid; place-items: center; }
+  .page-loader__panel { position: absolute; inset: 0; background: var(--ink); transform-origin: 50% 0; }
+  .page-loader__content { position: relative; z-index: 1; display: grid; justify-items: center; gap: .7rem; }
+  .page-loader__content span:first-child { font: 850 clamp(5rem, 15vw, 13rem)/.68 var(--font-display); letter-spacing: -.09em; }
+  .page-loader__content span:last-child { font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
+  .page-loader__spinner { width: 1.5rem; height: 1.5rem; margin-top: .5rem; border: 2.5px solid #fff; border-bottom-color: transparent; border-radius: 50%; animation: loader-rotation 1s linear infinite; }
+  @keyframes loader-rotation { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .page-loader__spinner { animation: none; border-bottom-color: #fff; } }
+  :global(.page-loader.is-complete) { visibility: hidden; }
+</style>

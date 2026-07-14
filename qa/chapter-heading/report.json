@@ -1,0 +1,328 @@
+{
+  "generatedAt": "2026-07-13T16:12:07.411Z",
+  "report": [
+    {
+      "size": "1440x900",
+      "before": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 481.113)",
+        "sectionTop": 945
+      },
+      "metrics": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "documentWidth": 1440,
+        "overflow": false,
+        "section": {
+          "height": 666,
+          "minHeight": "666px",
+          "paddingTop": "72px",
+          "paddingInline": "28.8px",
+          "background": "rgb(255, 255, 255)",
+          "overflow": "clip"
+        },
+        "maskOverflow": "hidden",
+        "heading": {
+          "text": "WE GREW FOR NINE YEARS WITHOUT A WEBSITE, BECAUSE WE DIDN’T NEED ONE",
+          "width": 1353.6,
+          "left": 43.2,
+          "fontFamily": "\"Archivo Variable\", \"Arial Black\", Arial, sans-serif",
+          "fontSize": "106.56px",
+          "fontWeight": "780",
+          "lineHeight": "91.6416px",
+          "letterSpacing": "-4.7952px",
+          "color": "rgb(217, 227, 233)",
+          "textAlign": "center",
+          "opacity": 1,
+          "visibility": "visible",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "lines": [
+          {
+            "text": "WE GREW FOR",
+            "display": "block",
+            "left": 43.2,
+            "top": 220.9,
+            "width": 1353.6
+          },
+          {
+            "text": "NINE YEARS",
+            "display": "block",
+            "left": 43.2,
+            "top": 312.5,
+            "width": 1353.6
+          },
+          {
+            "text": "WITHOUT A WEBSITE,",
+            "display": "block",
+            "left": 43.2,
+            "top": 404.2,
+            "width": 1353.6
+          },
+          {
+            "text": "BECAUSE WE DIDN’T",
+            "display": "block",
+            "left": 43.2,
+            "top": 495.8,
+            "width": 1353.6
+          },
+          {
+            "text": "NEED ONE",
+            "display": "block",
+            "left": 43.2,
+            "top": 587.5,
+            "width": 1353.6
+          }
+        ]
+      },
+      "runtimeErrors": []
+    },
+    {
+      "size": "1024x768",
+      "before": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 342.152)",
+        "sectionTop": 806.390625
+      },
+      "metrics": {
+        "viewport": {
+          "width": 1024,
+          "height": 768
+        },
+        "documentWidth": 1024,
+        "overflow": false,
+        "section": {
+          "height": 568.3,
+          "minHeight": "568.32px",
+          "paddingTop": "61.44px",
+          "paddingInline": "20.48px",
+          "background": "rgb(255, 255, 255)",
+          "overflow": "clip"
+        },
+        "maskOverflow": "hidden",
+        "heading": {
+          "text": "WE GREW FOR NINE YEARS WITHOUT A WEBSITE, BECAUSE WE DIDN’T NEED ONE",
+          "width": 962.5,
+          "left": 30.7,
+          "fontFamily": "\"Archivo Variable\", \"Arial Black\", Arial, sans-serif",
+          "fontSize": "75.776px",
+          "fontWeight": "780",
+          "lineHeight": "65.1674px",
+          "letterSpacing": "-3.40992px",
+          "color": "rgb(217, 227, 233)",
+          "textAlign": "center",
+          "opacity": 1,
+          "visibility": "visible",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "lines": [
+          {
+            "text": "WE GREW FOR",
+            "display": "block",
+            "left": 30.7,
+            "top": 220.6,
+            "width": 962.5
+          },
+          {
+            "text": "NINE YEARS",
+            "display": "block",
+            "left": 30.7,
+            "top": 285.8,
+            "width": 962.5
+          },
+          {
+            "text": "WITHOUT A WEBSITE,",
+            "display": "block",
+            "left": 30.7,
+            "top": 351,
+            "width": 962.5
+          },
+          {
+            "text": "BECAUSE WE DIDN’T",
+            "display": "block",
+            "left": 30.7,
+            "top": 416.1,
+            "width": 962.5
+          },
+          {
+            "text": "NEED ONE",
+            "display": "block",
+            "left": 30.7,
+            "top": 481.3,
+            "width": 962.5
+          }
+        ]
+      },
+      "runtimeErrors": []
+    },
+    {
+      "size": "768x1024",
+      "before": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 287.027)",
+        "sectionTop": 1658.875
+      },
+      "metrics": {
+        "viewport": {
+          "width": 768,
+          "height": 1024
+        },
+        "documentWidth": 768,
+        "overflow": false,
+        "section": {
+          "height": 737.3,
+          "minHeight": "737.28px",
+          "paddingTop": "81.92px",
+          "paddingInline": "16px",
+          "background": "rgb(255, 255, 255)",
+          "overflow": "clip"
+        },
+        "maskOverflow": "hidden",
+        "heading": {
+          "text": "WE GREW FOR NINE YEARS WITHOUT A WEBSITE, BECAUSE WE DIDN’T NEED ONE",
+          "width": 737.3,
+          "left": 16,
+          "fontFamily": "\"Archivo Variable\", \"Arial Black\", Arial, sans-serif",
+          "fontSize": "61.44px",
+          "fontWeight": "780",
+          "lineHeight": "54.6816px",
+          "letterSpacing": "-2.7648px",
+          "color": "rgb(217, 227, 233)",
+          "textAlign": "center",
+          "opacity": 1,
+          "visibility": "visible",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "lines": [
+          {
+            "text": "WE GREW FOR",
+            "display": "block",
+            "left": 16,
+            "top": 374.8,
+            "width": 737.3
+          },
+          {
+            "text": "NINE YEARS",
+            "display": "block",
+            "left": 16,
+            "top": 429.5,
+            "width": 737.3
+          },
+          {
+            "text": "WITHOUT A WEBSITE,",
+            "display": "block",
+            "left": 16,
+            "top": 484.2,
+            "width": 737.3
+          },
+          {
+            "text": "BECAUSE WE DIDN’T",
+            "display": "block",
+            "left": 16,
+            "top": 538.8,
+            "width": 737.3
+          },
+          {
+            "text": "NEED ONE",
+            "display": "block",
+            "left": 16,
+            "top": 593.5,
+            "width": 737.3
+          }
+        ]
+      },
+      "runtimeErrors": []
+    },
+    {
+      "size": "390x844",
+      "before": {
+        "opacity": 0,
+        "transform": "matrix(1, 0, 0, 1, 0, 293.196)",
+        "sectionTop": 1266
+      },
+      "metrics": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "overflow": false,
+        "section": {
+          "height": 573.9,
+          "minHeight": "573.92px",
+          "paddingTop": "67.52px",
+          "paddingInline": "16px",
+          "background": "rgb(255, 255, 255)",
+          "overflow": "clip"
+        },
+        "maskOverflow": "hidden",
+        "heading": {
+          "text": "WE GREW FOR NINE YEARS WITHOUT A WEBSITE, BECAUSE WE DIDN’T NEED ONE",
+          "width": 358,
+          "left": 16,
+          "fontFamily": "\"Archivo Variable\", \"Arial Black\", Arial, sans-serif",
+          "fontSize": "42.9px",
+          "fontWeight": "780",
+          "lineHeight": "39.897px",
+          "letterSpacing": "-1.716px",
+          "color": "rgb(217, 227, 233)",
+          "textAlign": "center",
+          "opacity": 1,
+          "visibility": "visible",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        "lines": [
+          {
+            "text": "WE GREW FOR",
+            "display": "inline",
+            "left": 44.2,
+            "top": 278.3,
+            "width": 301.7
+          },
+          {
+            "text": "NINE YEARS",
+            "display": "inline",
+            "left": 68,
+            "top": 318.2,
+            "width": 254.1
+          },
+          {
+            "text": "WITHOUT A WEBSITE,",
+            "display": "inline",
+            "left": 75.5,
+            "top": 358.1,
+            "width": 239
+          },
+          {
+            "text": "BECAUSE WE DIDN’T",
+            "display": "inline",
+            "left": 86.5,
+            "top": 437.9,
+            "width": 217
+          },
+          {
+            "text": "NEED ONE",
+            "display": "inline",
+            "left": 86.1,
+            "top": 517.7,
+            "width": 217.8
+          }
+        ]
+      },
+      "runtimeErrors": []
+    }
+  ],
+  "reducedMotion": {
+    "opacity": "1",
+    "visibility": "visible",
+    "transform": "none"
+  },
+  "noJavaScript": {
+    "text": "WE GREW FOR NINE YEARS WITHOUT A WEBSITE, BECAUSE WE DIDN’T NEED ONE",
+    "opacity": "1",
+    "visibility": "visible",
+    "transform": "none"
+  }
+}

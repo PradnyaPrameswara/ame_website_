@@ -1,0 +1,21 @@
+<section class="story-statements" aria-label="Our story" data-story-statements>
+  <article class="story-statement story-statement--left"><p>We could’ve had one sooner. But our success lived in the work and the stories we created for others.</p></article>
+  <article class="story-statement story-statement--right"><p>We learned, edited, and perfected <em>what was worth saying.</em></p></article>
+  <article class="story-statement story-statement--center"><p>So what’s worth sharing now is the point of view the real work built.</p></article>
+  <article class="story-statement story-statement--wide"><p>We care equally about the idea and the <em>system required to ship it.</em></p></article>
+</section>
+
+<style>
+  .story-statements { overflow: clip; background: var(--white); }
+  .story-statement { display: grid; min-height: 72svh; align-items: center; padding: 8rem var(--page-gutter); }
+  .story-statement p { width: min(48rem, 58vw); font: 500 clamp(2.5rem, 5.6vw, 6.3rem)/.94 var(--font-body); letter-spacing: -.07em; }
+  .story-statement em { color: var(--accent); font-family: var(--font-accent); font-weight: 400; }
+  .story-statement--right p { justify-self: end; }
+  .story-statement--center p { width: min(50rem, 62vw); justify-self: center; }
+  .story-statement--wide p { width: min(70rem, 84vw); }
+  @media (min-width: 64rem) {
+    .story-statement { min-height: 20svh; padding-block: 1.5rem; }
+    .story-statement p { font-size: clamp(1.7rem, 3.2vw, 3.5rem); }
+  }
+  @media (max-width: 47.99rem) { .story-statement { min-height: 62svh; padding-block: 5rem; } .story-statement p { width: 88vw; font-size: 10.5vw; } }
+</style>

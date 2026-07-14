@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import { clients } from "../../data/content";
+---
+
+<section class="clients" aria-labelledby="clients-title" data-client-section>
+  <div class="clients__intro">
+    <div><p class="clients__lead">Most of our client work comes from</p><h2 id="clients-title">TRUSTED</h2></div>
+    <div class="clients__support"><p>That’s how a studio that stayed off the grid found success: through trust, consistency, and a shared ethos.</p><p>Project to project, referral after referral, we meet people where they are.</p></div>
+  </div>
+  <p class="clients__label eyebrow">The brands that bet on us</p>
+  <div class="client-showcase" data-client-showcase>
+    <div class="client-list" role="list" aria-label="Selected client projects">
+      {clients.map((client, index) => (
+        <button class:list={["client-button", { "is-active": index === 0 }]} type="button" data-client-button={index} aria-pressed={index === 0 ? "true" : "false"}>
+          <span>{String(index + 1).padStart(2, "0")}</span><span>{client.name}</span><span aria-hidden="true">↗</span>
+        </button>
+      ))}
+    </div>
+    <div class="client-previews" aria-live="polite">
+      {clients.map((client, index) => (
+        <figure class:list={["client-preview", { "is-active": index === 0 }]} data-client-preview={index} aria-hidden={index === 0 ? "false" : "true"}>
+          <Image src={client.image} alt={`${client.name}: ${client.description}`} widths={[540, 840, 1200]} sizes="(max-width: 1023px) 92vw, 46vw" loading="lazy" quality={82} />
+          <figcaption><span>{client.name}</span><p>{client.description}</p></figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .clients { position: relative; min-height: 215svh; padding: 8rem var(--page-gutter) 10rem; overflow: clip; background: var(--white); }
+  .clients__intro { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 6vw; margin-bottom: 12rem; }
+  .clients__intro > * { min-width: 0; }
+  .clients__lead { max-width: 18rem; margin-bottom: 1.5rem; font-size: clamp(1.1rem, 1.6vw, 1.55rem); line-height: 1.2; }
+  .clients__intro h2 { color: var(--accent); font: 850 clamp(6rem, 16vw, 18rem)/.7 var(--font-display); letter-spacing: -.09em; text-transform: uppercase; }
+  .clients__support { display: grid; align-content: end; gap: 2.5rem; padding-bottom: 1rem; }
+  .clients__support p { max-width: 27rem; font-size: clamp(1rem, 1.3vw, 1.25rem); line-height: 1.35; }
+  .clients__label { margin-bottom: 2rem; }
+  .client-showcase { position: sticky; top: 5vh; display: grid; grid-template-columns: .9fr 1.1fr; gap: 7vw; height: 90svh; container-type: inline-size; }
+  .client-list { display: grid; align-content: center; }
+  .client-button { display: grid; grid-template-columns: 2.5rem 1fr auto; align-items: baseline; width: 100%; padding: .5rem 0; color: #17171748; border-bottom: 1px solid #17171735; text-align: left; }
+  .client-button span:nth-child(1), .client-button span:nth-child(3) { font-size: .58rem; }
+  .client-button span:nth-child(2) { font: 700 clamp(1.85rem, 3.65vw, 4.2rem)/.95 var(--font-display); letter-spacing: -.05em; text-transform: uppercase; }
+  .client-button:hover, .client-button:focus-visible, .client-button.is-active { color: var(--accent); }
+  .client-previews { position: relative; height: min(80vh, 51rem); align-self: center; }
+  .client-preview { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; clip-path: inset(0 0 100%); transform: scale(.96); }
+  .client-preview.is-active { z-index: 2; opacity: 1; visibility: visible; clip-path: inset(0); transform: scale(1); }
+  .client-preview :global(img) { width: 100%; height: calc(100% - 7rem); object-fit: cover; }
+  .client-preview figcaption { display: grid; grid-template-columns: .35fr 1fr; gap: 2rem; padding-top: 1rem; }
+  .client-preview figcaption span { color: var(--accent); font-size: .65rem; text-transform: uppercase; }
+  .client-preview figcaption p { max-width: 36rem; font-size: .86rem; line-height: 1.4; }
+  @media (min-width: 64rem) {
+    .clients { min-height: 175svh; padding-block: 5rem 6rem; }
+    .clients__intro { margin-bottom: 6rem; }
+  }
+  @media (max-width: 63.99rem) {
+    .clients { min-height: auto; padding-block: 7rem; }
+    .clients__intro { grid-template-columns: 1fr; margin-bottom: 7rem; }
+    .client-showcase { position: relative; top: 0; display: block; height: auto; }
+    .client-previews { height: 70svh; min-height: 32rem; }
+    .client-list { margin-top: 2rem; }
+  }
+  @media (max-width: 47.99rem) { .clients__intro h2 { font-size: 14vw; } .client-button span:nth-child(2) { font-size: 1.85rem; } .client-preview figcaption { grid-template-columns: 1fr; gap: .4rem; } }
+  @container (width < 50em) { .client-button { grid-template-columns: 2rem 1fr auto; } .client-button span:nth-child(2) { font-size: clamp(1.5rem, 5cqw, 2.5rem); } }
+</style>

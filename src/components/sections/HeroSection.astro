@@ -1,0 +1,50 @@
+---
+import AnimatedLink from "../ui/AnimatedLink.astro";
+import HeroImageTrail from "./HeroImageTrail.astro";
+---
+
+<section class="hero" id="about" aria-labelledby="hero-title" data-hero>
+  <div class="hero__layout">
+    <div class="hero__left-wrap">
+      <h1 id="hero-title" class="hero__wordmark" data-hero-wordmark><span>AME</span></h1>
+      <div class="hero__labels" data-hero-copy>
+        <span>AME</span><span>Creative Studio</span>
+      </div>
+      <p class="hero__founder" data-hero-copy>Led by a hyper-proactive perfectionist, strategist turned producer turned creative director who refuses to stay in a single lane.</p>
+    </div>
+    <div class="hero__right-wrap">
+      <p class="hero__statement" data-hero-line>A creative studio merging systems-thinking with storytelling for brands, agencies, and film.</p>
+      <div class="hero__cta" data-hero-cta><AnimatedLink href="#beginning" label="About us" /></div>
+    </div>
+    <HeroImageTrail />
+  </div>
+</section>
+
+<style>
+  .hero { position: relative; min-height: 100svh; padding-inline: var(--page-gutter); overflow: clip; background: var(--color-background); }
+  .hero__layout { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; min-height: 100svh; padding-block: clamp(1rem, 1.85vh, 1.125rem); }
+  .hero__left-wrap, .hero__right-wrap { position: relative; z-index: 4; grid-area: 1 / 1 / 2 / -1; min-width: 0; pointer-events: none; }
+  .hero__left-wrap a, .hero__right-wrap a { pointer-events: auto; }
+  .hero__wordmark { position: absolute; top: 0; left: 0; overflow: hidden; }
+  .hero__wordmark span { display: block; color: var(--accent); font: 850 clamp(5.3rem, 10vw, 10rem)/.68 var(--font-display); letter-spacing: -.09em; }
+  .hero__labels { position: absolute; top: 29.5%; left: 0; display: grid; grid-template-columns: minmax(12rem, 27vw) auto; color: var(--accent); font-size: clamp(.7rem, 1.05vw, 1rem); font-weight: 750; letter-spacing: .03em; text-transform: none; }
+  .hero__statement { position: absolute; top: 47.5%; right: 0; width: min(31rem, 39vw); font: 700 clamp(1.9rem, 2.9vw, 2.9rem)/1.16 var(--font-primary); letter-spacing: -.045em; }
+  .hero__founder { position: absolute; bottom: 0; left: 0; width: min(19rem, 24vw); font: 600 clamp(.84rem, 1.5vw, 1.2rem)/1.3 var(--font-primary); letter-spacing: -.02em; }
+  .hero__cta { position: absolute; right: 0; bottom: 0; z-index: 44; }
+  .hero__cta :global(.animated-link) { min-width: min(17rem, 21vw); color: var(--paper); background: var(--ink); border-color: var(--ink); }
+  @media (max-width: 63.99rem) {
+    .hero { min-height: 100svh; }
+    .hero__wordmark { display: none; }
+    .hero__labels { top: 22%; grid-template-columns: minmax(9rem, 38vw) auto; }
+    .hero__statement { top: 38%; width: min(35rem, 66vw); }
+    .hero__founder { width: min(21rem, 44vw); }
+  }
+  @media (max-width: 47.99rem) {
+    .hero { min-height: 100svh; }
+    .hero__labels { top: 21%; grid-template-columns: 1fr 1fr; width: calc(100% - 2 * var(--page-gutter)); }
+    .hero__statement { top: 34%; right: var(--page-gutter); width: 80vw; font-size: clamp(1.9rem, 8.3vw, 3rem); }
+    .hero__founder { bottom: 8.3rem; width: 74vw; font-size: .9rem; }
+    .hero__cta { right: var(--page-gutter); bottom: 1.2rem; left: var(--page-gutter); }
+    .hero__cta :global(.animated-link) { width: 100%; }
+  }
+</style>

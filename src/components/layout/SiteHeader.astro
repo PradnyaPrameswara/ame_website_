@@ -1,0 +1,75 @@
+---
+import { navigation } from "../../data/content";
+---
+
+<header class="site-header" data-site-header>
+  <a class="brand" href="#top" aria-label="AME studio, home"><span>AME</span></a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    {navigation.slice(0, 3).map((item) => <a href={item.href} data-nav-link><span>{item.label}</span><span aria-hidden="true">{item.label}</span></a>)}
+    <button class="desktop-nav__create" type="button" aria-expanded="false" aria-controls="create-menu" data-create-toggle data-nav-link>
+      <span class="desktop-nav__create-track"><span>Create with us</span><span>Close</span></span>
+    </button>
+  </nav>
+  <div class="create-menu" id="create-menu" aria-hidden="true" data-create-menu inert>
+    <div class="create-menu__column">
+      <p>Start something meaningful.</p>
+      <a href="mailto:hello@ame-studio.example"><span>Tell us about the project</span></a>
+      <a href="#work"><span>Selected work</span></a>
+      <a href="#services"><span>Our services</span></a>
+      <a href="#about"><span>About the studio</span></a>
+    </div>
+  </div>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+    <span class="sr-only">Open navigation menu</span><span></span><span></span>
+  </button>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+    <nav aria-label="Mobile navigation">
+      {navigation.map((item, index) => <a href={item.href} data-menu-link><span>0{index + 1}</span>{item.label.replace(",", "")}</a>)}
+    </nav>
+    <div class="mobile-menu__foot"><span>Bali · Indonesia</span><a href="mailto:hello@ame-studio.example">hello@ame-studio.example</a></div>
+  </div>
+</header>
+
+<style>
+  .site-header { position: fixed; inset: 0 0 auto; z-index: 100; height: 3.08rem; padding: 1rem var(--page-gutter); pointer-events: none; }
+  .brand { display: none; }
+  .desktop-nav { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; column-gap: .75rem; position: absolute; top: .62rem; right: var(--page-gutter); width: min(38.7%, 31rem); font-size: clamp(.82rem, 1.15vw, 1rem); font-weight: 650; line-height: 1.25; letter-spacing: -.03em; pointer-events: auto; }
+  .desktop-nav a { height: 1.35em; overflow: hidden; }
+  .desktop-nav a span { display: block; transition: transform .4s var(--ease-out); }
+  .desktop-nav a:hover span, .desktop-nav a:focus-visible span { transform: translateY(-100%); }
+  .desktop-nav__create { grid-column: 1 / 4; width: fit-content; height: 1.35em; margin-top: .1rem; overflow: hidden; text-align: left; }
+  .desktop-nav__create-track { position: relative; display: block; height: 100%; }
+  .desktop-nav__create-track > span { display: block; transition: transform 1.5s cubic-bezier(.19, 1, .22, 1); }
+  .desktop-nav__create-track > span:last-child { position: absolute; top: 0; left: 0; transform: translateY(105%); }
+  .site-header.is-create-open .desktop-nav__create-track > span:first-child { transform: translateY(-105%); }
+  .site-header.is-create-open .desktop-nav__create-track > span:last-child { transform: translateY(0); }
+  .create-menu { position: fixed; inset: 0; z-index: 99; width: 100vw; overflow: hidden; color: var(--paper); background: var(--accent); visibility: hidden; pointer-events: none; transform: translateX(100%); transition: transform 1.75s cubic-bezier(.23, 1, .32, 1), visibility 1.75s; }
+  .create-menu__column { display: grid; align-content: center; gap: .35rem; width: min(42rem, 50vw); height: 100%; padding: 7rem 2rem 3rem; transform: translateX(0); transition: transform 1.75s cubic-bezier(.23, 1, .32, 1); }
+  .create-menu p { margin-bottom: 2rem; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+  .create-menu a { overflow: hidden; font: 750 clamp(2rem, 3.7vw, 4.5rem)/.92 var(--font-display); letter-spacing: -.055em; text-transform: uppercase; }
+  .create-menu a span { display: block; transform: translateY(105%); transition: transform 1.5s cubic-bezier(.19, 1, .22, 1); }
+  .create-menu a:nth-of-type(1) span { transition-delay: .25s; }
+  .create-menu a:nth-of-type(2) span { transition-delay: .375s; }
+  .create-menu a:nth-of-type(3) span { transition-delay: .5s; }
+  .create-menu a:nth-of-type(4) span { transition-delay: .625s; }
+  .site-header.is-create-open .create-menu { visibility: visible; pointer-events: auto; transform: translateX(0); }
+  .site-header.is-create-open .create-menu__column { transform: translateX(70%); }
+  .site-header.is-create-open .create-menu a span { transform: translateY(0); }
+  .menu-toggle, .mobile-menu { display: none; }
+  @media (max-width: 63.99rem) {
+    .site-header { height: 5rem; padding-top: .9rem; }
+    .brand { position: relative; z-index: 102; display: block; width: fit-content; color: var(--accent); font: 850 clamp(4.4rem, 14vw, 7rem)/.68 var(--font-display); letter-spacing: -.08em; pointer-events: auto; }
+    .desktop-nav { display: none; }
+    .create-menu { display: none; }
+    .menu-toggle { position: absolute; top: .75rem; right: var(--page-gutter); z-index: 102; display: grid; gap: .35rem; width: 2.8rem; height: 2.8rem; place-content: center; color: var(--white); background: var(--ink); pointer-events: auto; }
+    .menu-toggle span:not(.sr-only) { width: 1.2rem; height: 1px; background: currentColor; transition: transform .35s var(--ease-out); }
+    .menu-toggle[aria-expanded="true"] span:nth-child(2) { transform: translateY(.175rem) rotate(45deg); }
+    .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-.175rem) rotate(-45deg); }
+    .mobile-menu { position: fixed; inset: 0; z-index: 101; display: grid; align-content: space-between; padding: 7rem var(--page-gutter) 1.4rem; color: var(--white); background: var(--accent); opacity: 0; visibility: hidden; transform: translateY(-100%); transition: transform .55s var(--ease-out), opacity .35s, visibility .55s; pointer-events: auto; }
+    .mobile-menu.is-open { opacity: 1; visibility: visible; transform: translateY(0); }
+    .mobile-menu nav { display: grid; }
+    .mobile-menu nav a { display: grid; grid-template-columns: 2rem 1fr; align-items: baseline; padding: .4rem 0; border-bottom: 1px solid #fff6; font: 750 clamp(2.6rem, 13vw, 4.5rem)/.95 var(--font-display); letter-spacing: -.05em; text-transform: uppercase; }
+    .mobile-menu nav span { font: 500 .65rem/1 var(--font-body); letter-spacing: .05em; }
+    .mobile-menu__foot { display: flex; justify-content: space-between; gap: 1rem; font-size: .62rem; text-transform: uppercase; }
+  }
+</style>

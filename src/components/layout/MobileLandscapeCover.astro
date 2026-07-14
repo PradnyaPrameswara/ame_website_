@@ -1,0 +1,11 @@
+<aside class="mobile-landscape-cover" role="status" aria-live="polite">
+  <span aria-hidden="true">↻</span>
+  <p>Please rotate your device.<br />This experience is designed for portrait orientation.</p>
+</aside>
+
+<style>
+  .mobile-landscape-cover { position: fixed; inset: 0; z-index: 997; display: none; align-items: center; justify-content: center; gap: 1.25rem; padding: 2rem; color: var(--paper); background: var(--ink); text-align: center; }
+  .mobile-landscape-cover span { color: var(--accent); font-size: 3rem; }
+  .mobile-landscape-cover p { max-width: 24rem; font-size: clamp(1rem, 3vw, 1.35rem); line-height: 1.25; }
+  @media (max-width: 767px) and (orientation: landscape) { .mobile-landscape-cover { display: flex; } }
+</style>

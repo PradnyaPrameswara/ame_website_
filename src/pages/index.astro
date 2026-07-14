@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/layout/SiteHeader.astro";
+import SiteFooter from "../components/layout/SiteFooter.astro";
+import HeroSection from "../components/sections/HeroSection.astro";
+import ChapterTransition from "../components/sections/ChapterTransition.astro";
+import StoryPoster from "../components/sections/StoryPoster.astro";
+import StoryStatements from "../components/sections/StoryStatements.astro";
+import OperationsSequence from "../components/sections/OperationsSequence.astro";
+import ClientShowcase from "../components/sections/ClientShowcase.astro";
+import CapabilitiesSection from "../components/sections/CapabilitiesSection.astro";
+import ServicesIntro from "../components/sections/ServicesIntro.astro";
+import ServicesStack from "../components/sections/ServicesStack.astro";
+import ClosingSection from "../components/sections/ClosingSection.astro";
+
+const title = "AME — Independent Creative Studio";
+const description = "AME is an independent creative studio shaping brands, campaigns, films, and experiences through strategy, storytelling, and production.";
+---
+
+<BaseLayout {title} {description}>
+  <div class="page" id="top">
+    <SiteHeader />
+    <main id="main-content">
+      <HeroSection />
+      <ChapterTransition number="01" label="The first thing you should know about us" target="beginning" />
+      <StoryPoster />
+      <StoryStatements />
+      <OperationsSequence />
+      <ChapterTransition number="02" label="The second thing you should know about us" target="trust" />
+      <ClientShowcase />
+      <ChapterTransition number="03" label="The third thing you should know about us" target="capabilities" />
+      <CapabilitiesSection />
+      <ServicesIntro />
+      <ServicesStack />
+      <ClosingSection />
+    </main>
+    <SiteFooter />
+  </div>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+interface Props {
+  href: string;
+  label: string;
+  inverse?: boolean;
+}
+
+const { href, label, inverse = false } = Astro.props;
+---
+
+<a class:list={["animated-link", { "animated-link--inverse": inverse }]} href={href}>
+  <span class="animated-link__viewport">
+    <span class="animated-link__track">
+      <span>{label}</span>
+      <span aria-hidden="true">{label}</span>
+    </span>
+  </span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11" /></svg>
+</a>
+
+<style>
+  .animated-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 2.5rem; min-width: min(100%, 18rem); padding: .85rem 1rem; border: 1px solid currentColor; color: var(--ink); font: 650 .72rem/1 var(--font-body); letter-spacing: .08em; text-transform: uppercase; transition: background-color .3s, color .3s; }
+  .animated-link--inverse { color: var(--paper); }
+  .animated-link__viewport { height: 1em; overflow: hidden; }
+  .animated-link__track { display: flex; flex-direction: column; gap: .25rem; transition: transform .35s var(--ease-out); }
+  .animated-link svg { width: 1.1rem; fill: none; stroke: currentColor; stroke-width: 1.5; transition: transform .35s var(--ease-out); }
+  .animated-link:hover, .animated-link:focus-visible { background: var(--accent); color: var(--paper); }
+  .animated-link:hover .animated-link__track, .animated-link:focus-visible .animated-link__track { transform: translateY(calc(-1em - .25rem)); }
+  .animated-link:hover svg, .animated-link:focus-visible svg { transform: translate(.18rem, -.18rem); }
+</style>

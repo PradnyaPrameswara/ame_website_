@@ -1,0 +1,59 @@
+---
+import { services } from "../../data/content";
+---
+
+<section class="services-stack" id="services" aria-labelledby="services-title" data-services-stack>
+  <div class="services-stack__sticky">
+    <h2 class="services-stack__background-title" id="services-title">Our<br />Services</h2>
+    <div class="services-stack__cards swiper" data-services-slider>
+      <div class="swiper-wrapper">
+        {services.map((service, index) => (
+          <article class:list={["service-card", "swiper-slide", `service-card--${service.tone}`]} data-service-card style={`--card-index:${index}`}>
+            <span class="service-card__number">{service.number}</span>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            <ul>{service.tags.map((tag) => <li>{tag}</li>)}</ul>
+            <span class="service-card__corner" aria-hidden="true">AME / {service.number}</span>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-stack { position: relative; background: var(--white); }
+  .services-stack__sticky { position: relative; overflow: clip; }
+  .services-stack__background-title { position: absolute; inset: 5vh auto auto var(--page-gutter); color: #1717170d; font: 850 clamp(8rem, 23vw, 27rem)/.67 var(--font-display); letter-spacing: -.1em; text-transform: uppercase; }
+  .services-stack__cards { position: relative; width: min(88rem, calc(100% - 2 * var(--page-gutter))); container-type: inline-size; }
+  .services-stack__cards .swiper-wrapper { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .service-card { position: relative; display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto 1fr auto auto; gap: 1.25rem; min-width: 0; padding: clamp(1.35rem, 2vw, 2.25rem); color: var(--ink); background: #d9e3e7; border: 1px solid #17171733; box-shadow: 0 1.5rem 4rem #17171718; transform-origin: 50% 100%; will-change: transform; }
+  .service-card--blue { background: #d9e3e7; }
+  .service-card__number { font-size: .7rem; }
+  .service-card h3 { grid-column: 1 / -1; max-width: 9ch; font: 750 clamp(2.4rem, 4.4vw, 5.2rem)/.82 var(--font-display); letter-spacing: -.065em; text-transform: uppercase; }
+  .service-card p { grid-column: 1 / -1; align-self: end; max-width: 23rem; font-size: clamp(.9rem, 1.1vw, 1.15rem); line-height: 1.25; }
+  .service-card ul { grid-column: 1 / 3; display: flex; flex-wrap: wrap; gap: .5rem; align-self: end; padding: 0; list-style: none; }
+  .service-card li { padding: .4rem .65rem; border: 1px solid currentColor; font-size: .6rem; letter-spacing: .06em; text-transform: uppercase; }
+  .service-card__corner { align-self: end; justify-self: end; font: 600 clamp(1.2rem, 2vw, 2rem)/1 var(--font-body); }
+  @media (min-width: 64rem) {
+    .services-stack { height: 112svh; }
+    .services-stack__sticky { display: grid; height: 112svh; padding-block: 4svh; place-items: center; }
+    .service-card { min-height: 47svh; }
+  }
+  @media (max-width: 63.99rem) {
+    .services-stack { height: auto; padding: 7rem var(--page-gutter); overflow: clip; }
+    .services-stack__sticky { display: block; height: auto; overflow: visible; }
+    .services-stack__background-title { position: relative; inset: auto; margin-bottom: 4rem; }
+    .services-stack__cards { width: 100%; }
+    .service-card { min-height: 34rem; }
+  }
+  @media (max-width: 47.99rem) {
+    .services-stack { padding-inline: 0; }
+    .services-stack__background-title { margin-inline: 1rem; font-size: 25vw; }
+    .services-stack__cards { width: 100%; padding-left: 1rem; overflow: hidden; }
+    .services-stack__cards .swiper-wrapper { display: flex; gap: 0; }
+    .service-card { min-height: 31rem; padding: 1.4rem; }
+    .service-card h3 { font-size: 12vw; }
+  }
+  @container (width < 50em) { .service-card { grid-template-columns: 1fr auto; } .service-card h3, .service-card p, .service-card ul { grid-column: 1 / -1; } }
+</style>

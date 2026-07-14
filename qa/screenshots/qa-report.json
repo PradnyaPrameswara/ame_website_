@@ -1,0 +1,1111 @@
+{
+  "report": [
+    {
+      "name": "desktop-1440x900",
+      "metrics": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "scrollHeight": 8326,
+        "htmlWidth": 1440,
+        "bodyWidth": 1440,
+        "heroHeight": 900,
+        "menuDisplay": "none",
+        "desktopNavDisplay": "grid",
+        "horizontalOffenders": [
+          {
+            "tag": "DIV",
+            "className": "create-menu",
+            "left": 1440,
+            "right": 2112,
+            "width": 672
+          },
+          {
+            "tag": "DIV",
+            "className": "create-menu__column",
+            "left": 1440,
+            "right": 1923.828125,
+            "width": 483.828125
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1472,
+            "right": 1891.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": -40.80000305175781,
+            "right": 727.1999969482422,
+            "width": 768
+          }
+        ]
+      },
+      "menu": null,
+      "errors": []
+    },
+    {
+      "name": "mobile-390x844",
+      "metrics": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scrollHeight": 12600,
+        "htmlWidth": 390,
+        "bodyWidth": 390,
+        "heroHeight": 844,
+        "menuDisplay": "grid",
+        "desktopNavDisplay": "none",
+        "horizontalOffenders": [
+          {
+            "tag": "P",
+            "className": "services-intro__word services-intro__word--what",
+            "left": -3.890625,
+            "right": 321.125,
+            "width": 325.015625
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue swiper-slide-next",
+            "left": 328,
+            "right": 624,
+            "width": 296
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": 351.390625,
+            "right": 580.609375,
+            "width": 229.21875
+          },
+          {
+            "tag": "H3",
+            "className": "",
+            "left": 351.390625,
+            "right": 600.609375,
+            "width": 249.21875
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 351.390625,
+            "right": 600.609375,
+            "width": 249.21875
+          },
+          {
+            "tag": "UL",
+            "className": "",
+            "left": 351.390625,
+            "right": 600.609375,
+            "width": 249.21875
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 351.390625,
+            "right": 425.328125,
+            "width": 73.9375
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 433.328125,
+            "right": 526.546875,
+            "width": 93.21875
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 351.390625,
+            "right": 453.453125,
+            "width": 102.0625
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__corner",
+            "left": 502.375,
+            "right": 580.609375,
+            "width": 78.234375
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": 640,
+            "right": 936,
+            "width": 296
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": 663.390625,
+            "right": 892.609375,
+            "width": 229.21875
+          }
+        ]
+      },
+      "menu": {
+        "expanded": "true",
+        "hidden": "false",
+        "bodyLocked": true,
+        "closedByEscape": "false"
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile-430x932",
+      "metrics": {
+        "viewport": [
+          430,
+          932
+        ],
+        "scrollHeight": 13461,
+        "htmlWidth": 430,
+        "bodyWidth": 430,
+        "heroHeight": 932,
+        "menuDisplay": "grid",
+        "desktopNavDisplay": "none",
+        "horizontalOffenders": [
+          {
+            "tag": "P",
+            "className": "services-intro__word services-intro__word--what",
+            "left": -4.296875,
+            "right": 354.046875,
+            "width": 358.34375
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue swiper-slide-next",
+            "left": 360,
+            "right": 688,
+            "width": 328
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": 383.390625,
+            "right": 644.609375,
+            "width": 261.21875
+          },
+          {
+            "tag": "H3",
+            "className": "",
+            "left": 383.390625,
+            "right": 664.609375,
+            "width": 281.21875
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 383.390625,
+            "right": 664.609375,
+            "width": 281.21875
+          },
+          {
+            "tag": "UL",
+            "className": "",
+            "left": 383.390625,
+            "right": 664.609375,
+            "width": 281.21875
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 383.390625,
+            "right": 457.328125,
+            "width": 73.9375
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 465.328125,
+            "right": 558.546875,
+            "width": 93.21875
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 383.390625,
+            "right": 485.453125,
+            "width": 102.0625
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__corner",
+            "left": 566.375,
+            "right": 644.609375,
+            "width": 78.234375
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": 704,
+            "right": 1032,
+            "width": 328
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": 727.390625,
+            "right": 988.609375,
+            "width": 261.21875
+          }
+        ]
+      },
+      "menu": {
+        "expanded": "true",
+        "hidden": "false",
+        "bodyLocked": true,
+        "closedByEscape": "false"
+      },
+      "errors": []
+    },
+    {
+      "name": "tablet-768x1024",
+      "metrics": {
+        "viewport": [
+          768,
+          1024
+        ],
+        "scrollHeight": 16580,
+        "htmlWidth": 768,
+        "bodyWidth": 768,
+        "heroHeight": 1024,
+        "menuDisplay": "grid",
+        "desktopNavDisplay": "none",
+        "horizontalOffenders": [
+          {
+            "tag": "P",
+            "className": "services-intro__word services-intro__word--what",
+            "left": -7.671875,
+            "right": 504.34375,
+            "width": 512.015625
+          }
+        ]
+      },
+      "menu": {
+        "expanded": "true",
+        "hidden": "false",
+        "bodyLocked": true,
+        "closedByEscape": "false"
+      },
+      "errors": []
+    },
+    {
+      "name": "landscape-1024x768",
+      "metrics": {
+        "viewport": [
+          1024,
+          768
+        ],
+        "scrollHeight": 7115,
+        "htmlWidth": 1024,
+        "bodyWidth": 1024,
+        "heroHeight": 768,
+        "menuDisplay": "none",
+        "desktopNavDisplay": "grid",
+        "horizontalOffenders": [
+          {
+            "tag": "DIV",
+            "className": "create-menu",
+            "left": 1024,
+            "right": 1515.515625,
+            "width": 491.515625
+          },
+          {
+            "tag": "DIV",
+            "className": "create-menu__column",
+            "left": 1024,
+            "right": 1377.890625,
+            "width": 353.890625
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1056,
+            "right": 1345.890625,
+            "width": 289.890625
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": -33.796875,
+            "right": 560.109375,
+            "width": 593.90625
+          }
+        ]
+      },
+      "menu": null,
+      "errors": []
+    },
+    {
+      "name": "wide-1920x1080",
+      "metrics": {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "scrollHeight": 9973,
+        "htmlWidth": 1920,
+        "bodyWidth": 1920,
+        "heroHeight": 1080,
+        "menuDisplay": "none",
+        "desktopNavDisplay": "grid",
+        "horizontalOffenders": [
+          {
+            "tag": "DIV",
+            "className": "create-menu",
+            "left": 1920,
+            "right": 2592,
+            "width": 672
+          },
+          {
+            "tag": "DIV",
+            "className": "create-menu__column",
+            "left": 1920,
+            "right": 2403.828125,
+            "width": 483.828125
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "A",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "SPAN",
+            "className": "",
+            "left": 1952,
+            "right": 2371.828125,
+            "width": 419.828125
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": -28.800003051757812,
+            "right": 739.1999969482422,
+            "width": 768
+          }
+        ]
+      },
+      "menu": null,
+      "errors": []
+    }
+  ],
+  "sectionChecks": [
+    {
+      "name": "story",
+      "rect": {
+        "x": 0,
+        "y": 170,
+        "width": 1440,
+        "height": 666,
+        "top": 170,
+        "right": 1440,
+        "bottom": 836,
+        "left": 0
+      },
+      "scrollY": 775,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "sticky": {
+        "className": "story-poster__sticky",
+        "rect": {
+          "x": 36,
+          "y": 170,
+          "width": 1368,
+          "height": 666,
+          "top": 170,
+          "right": 1404,
+          "bottom": 836,
+          "left": 36
+        },
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "points": [
+        {
+          "y": 100,
+          "className": "hero__layout",
+          "tag": "DIV",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 450,
+          "className": "",
+          "tag": "H2",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 800,
+          "className": "story-poster__sticky",
+          "tag": "DIV",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "operations",
+      "rect": {
+        "x": 0,
+        "y": 72,
+        "width": 1440,
+        "height": 900,
+        "top": 72,
+        "right": 1440,
+        "bottom": 972,
+        "left": 0
+      },
+      "scrollY": 2259,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "sticky": {
+        "className": "operations__sticky",
+        "rect": {
+          "x": 36,
+          "y": 72,
+          "width": 1368,
+          "height": 900,
+          "top": 72,
+          "right": 1404,
+          "bottom": 972,
+          "left": 36
+        },
+        "background": "rgb(255, 255, 255)"
+      },
+      "points": [
+        {
+          "y": 100,
+          "className": "operations__sticky",
+          "tag": "DIV",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "y": 450,
+          "className": "operations__sticky",
+          "tag": "DIV",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "y": 800,
+          "className": "operations__aside",
+          "tag": "P",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "clients",
+      "rect": {
+        "x": 0,
+        "y": -212,
+        "width": 1440,
+        "height": 1575,
+        "top": -212,
+        "right": 1440,
+        "bottom": 1363,
+        "left": 0
+      },
+      "scrollY": 3488,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "sticky": {
+        "className": "clients__intro",
+        "rect": {
+          "x": 36,
+          "y": -132,
+          "width": 1368,
+          "height": 240.59375,
+          "top": -132,
+          "right": 1404,
+          "bottom": 108.59375,
+          "left": 36
+        },
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "points": [
+        {
+          "y": 100,
+          "className": "",
+          "tag": "H2",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 450,
+          "className": "",
+          "tag": "IMG",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 800,
+          "className": "",
+          "tag": "IMG",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "capabilities",
+      "rect": {
+        "x": 0,
+        "y": 261,
+        "width": 1440,
+        "height": 450,
+        "top": 261,
+        "right": 1440,
+        "bottom": 711,
+        "left": 0
+      },
+      "scrollY": 4635,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "sticky": {
+        "className": "capabilities__sticky",
+        "rect": {
+          "x": 36,
+          "y": 261,
+          "width": 1368,
+          "height": 450,
+          "top": 261,
+          "right": 1404,
+          "bottom": 711,
+          "left": 36
+        },
+        "background": "rgb(255, 255, 255)"
+      },
+      "points": [
+        {
+          "y": 100,
+          "className": "client-showcase",
+          "tag": "DIV",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 450,
+          "className": "capabilities__sticky",
+          "tag": "DIV",
+          "background": "rgb(255, 255, 255)"
+        },
+        {
+          "y": 800,
+          "className": "",
+          "tag": "H2",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "services-stack",
+      "rect": {
+        "x": 0,
+        "y": 27.484375,
+        "width": 1440,
+        "height": 1008,
+        "top": 27.484375,
+        "right": 1440,
+        "bottom": 1035.484375,
+        "left": 0
+      },
+      "scrollY": 5571,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "sticky": {
+        "className": "services-stack__sticky",
+        "rect": {
+          "x": 0,
+          "y": 27.484375,
+          "width": 1440,
+          "height": 1008,
+          "top": 27.484375,
+          "right": 1440,
+          "bottom": 1035.484375,
+          "left": 0
+        },
+        "background": "rgba(0, 0, 0, 0)"
+      },
+      "points": [
+        {
+          "y": 100,
+          "className": "swiper-wrapper",
+          "tag": "DIV",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 450,
+          "className": "swiper-wrapper",
+          "tag": "DIV",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 800,
+          "className": "swiper-wrapper",
+          "tag": "DIV",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "name": "closing-cta",
+      "rect": {
+        "x": 0,
+        "y": 264.484375,
+        "width": 1440,
+        "height": 441.734375,
+        "top": 264.484375,
+        "right": 1440,
+        "bottom": 706.21875,
+        "left": 0
+      },
+      "scrollY": 6720,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "sticky": null,
+      "points": [
+        {
+          "y": 100,
+          "className": "",
+          "tag": "STRONG",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 450,
+          "className": "",
+          "tag": "EM",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "y": 800,
+          "className": "",
+          "tag": "SPAN",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    }
+  ],
+  "progressStates": [
+    {
+      "name": "operations",
+      "progress": 0.15,
+      "scrollY": 2331,
+      "items": [
+        {
+          "text": "Numbers",
+          "transform": "matrix(1, 0, 0, 1, 0, -205.906)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Vendors",
+          "transform": "matrix(1, 0, 0, 1, 0, -59.4755)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Business Plans",
+          "transform": "matrix(1, 0, 0, 1, 0, 43.4777)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Scopes",
+          "transform": "matrix(1, 0, 0, 1, 0, 205.906)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "operations",
+      "progress": 0.5,
+      "scrollY": 2331,
+      "items": [
+        {
+          "text": "Numbers",
+          "transform": "matrix(1, 0, 0, 1, 0, -205.906)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Vendors",
+          "transform": "matrix(1, 0, 0, 1, 0, -51.4766)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Business Plans",
+          "transform": "matrix(1, 0, 0, 1, 0, 51.4766)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Scopes",
+          "transform": "matrix(1, 0, 0, 1, 0, 205.906)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "operations",
+      "progress": 0.85,
+      "scrollY": 2331,
+      "items": [
+        {
+          "text": "Numbers",
+          "transform": "matrix(1, 0, 0, 1, 0, -205.906)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Vendors",
+          "transform": "matrix(1, 0, 0, 1, 0, -51.4766)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Business Plans",
+          "transform": "matrix(1, 0, 0, 1, 0, 51.4766)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Scopes",
+          "transform": "matrix(1, 0, 0, 1, 0, 205.906)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "capabilities",
+      "progress": 0.15,
+      "scrollY": 4829,
+      "items": [
+        {
+          "text": "Film",
+          "transform": "matrix(1, 0, 0, 1, 0, -142.553)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Logic",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Emotion",
+          "transform": "matrix(1, 0, 0, 1, 0, 76.2771)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "capabilities",
+      "progress": 0.5,
+      "scrollY": 4671,
+      "items": [
+        {
+          "text": "Film",
+          "transform": "matrix(1, 0, 0, 1, 0, -142.553)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Logic",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Emotion",
+          "transform": "matrix(1, 0, 0, 1, 0, 142.553)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "capabilities",
+      "progress": 0.85,
+      "scrollY": 4514,
+      "items": [
+        {
+          "text": "Film",
+          "transform": "matrix(1, 0, 0, 1, 0, -74.2693)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Logic",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "Emotion",
+          "transform": "matrix(1, 0, 0, 1, 0, 142.553)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "progress": 0.15,
+      "scrollY": 5614,
+      "items": [
+        {
+          "text": "01Brand & CreativeWe fin",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "02Campaign & FilmWe tell",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "03Visual & ExperientialW",
+          "transform": "matrix(0.98283, 0.0117371, -0.0117371, 0.98283, 0, -4.34125)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "04Growth & PartnershipWe",
+          "transform": "matrix(0.982946, -0.0174079, 0.0174079, 0.982946, 0, -4.29176)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "progress": 0.5,
+      "scrollY": 5652,
+      "items": [
+        {
+          "text": "01Brand & CreativeWe fin",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "02Campaign & FilmWe tell",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "03Visual & ExperientialW",
+          "transform": "matrix(0.984644, 0.0105092, -0.0105092, 0.984644, 0, -3.88018)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "04Growth & PartnershipWe",
+          "transform": "matrix(0.984878, -0.0155026, 0.0155026, 0.984878, 0, -3.81461)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "progress": 0.85,
+      "scrollY": 5690,
+      "items": [
+        {
+          "text": "01Brand & CreativeWe fin",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "02Campaign & FilmWe tell",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "03Visual & ExperientialW",
+          "transform": "matrix(0.987362, 0.00867173, -0.00867173, 0.987362, 0, -3.1928)",
+          "opacity": "1",
+          "visibility": "visible"
+        },
+        {
+          "text": "04Growth & PartnershipWe",
+          "transform": "matrix(0.987517, -0.0127877, 0.0127877, 0.987517, 0, -3.13824)",
+          "opacity": "1",
+          "visibility": "visible"
+        }
+      ]
+    }
+  ],
+  "reduced": {
+    "servicesPosition": "relative",
+    "operationsPosition": "relative",
+    "capabilityPosition": "relative"
+  }
+}

@@ -1,0 +1,27 @@
+---
+import { footerLinks } from "../../data/content";
+---
+
+<footer class="site-footer" data-footer>
+  <a class="site-footer__collab" href="mailto:hello@ame-studio.example"><span>LET’S CREATE</span><span>TOGETHER ↗</span></a>
+  <div class="site-footer__grid">
+    <nav aria-label="Footer navigation">{footerLinks.map((item) => <a href={item.href}>{item.label.replace(",", "")}</a>)}</nav>
+    <div><span>Business enquiries</span><a href="mailto:hello@ame-studio.example">hello@ame-studio.example</a></div>
+    <div><span>Careers & collaborations</span><a href="mailto:people@ame-studio.example">people@ame-studio.example</a></div>
+    <div><span>Social</span><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+  </div>
+  <div class="site-footer__legal"><span>© {new Date().getFullYear()} AME Studio</span><span>Original design & development</span><a href="#top">Back to top ↑</a></div>
+</footer>
+
+<style>
+  .site-footer { overflow: hidden; padding: 5rem var(--page-gutter) 1.5rem; color: var(--paper); background: #131410; }
+  .site-footer__collab { display: grid; padding-bottom: 5rem; font: 850 clamp(4.8rem, 13.5vw, 15rem)/.72 var(--font-display); letter-spacing: -.09em; text-transform: uppercase; }
+  .site-footer__collab span:last-child { justify-self: end; color: var(--accent); }
+  .site-footer__grid { display: grid; grid-template-columns: 1fr 1.4fr 1.4fr 1fr; gap: 2rem; padding: 4rem 0; border-top: 1px solid #f2eee54d; }
+  .site-footer__grid nav, .site-footer__grid div { display: grid; align-content: start; gap: .45rem; }
+  .site-footer__grid span { color: #f2eee58f; font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; }
+  .site-footer__grid a { width: fit-content; font-size: .78rem; }
+  .site-footer__legal { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1.2rem; border-top: 1px solid #f2eee54d; font-size: .58rem; letter-spacing: .05em; text-transform: uppercase; }
+  @media (min-width: 64rem) { .site-footer { min-height: 100svh; } }
+  @media (max-width: 47.99rem) { .site-footer { padding-top: 4rem; } .site-footer__collab { gap: .18em; font-size: 21vw; } .site-footer__collab span:last-child { justify-self: start; } .site-footer__grid { grid-template-columns: 1fr; gap: 1.5rem; padding: 2.5rem 0; } .site-footer__legal { display: grid; } }
+</style>

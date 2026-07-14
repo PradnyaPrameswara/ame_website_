@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+import { heroTrail } from "../../data/content";
+---
+
+<div class="hero-trail" data-image-trail aria-hidden="true">
+  <div class="hero-trail__sources">
+    {heroTrail.map((item) => <Image src={item.image} alt="" width={24} height={24} loading="eager" quality={60} data-trail-source />)}
+  </div>
+  <div class="hero-trail__stage">
+    {heroTrail.map((item, index) => (
+      <figure class="hero-trail__item" data-trail-item={index}>
+        <Image src={item.image} alt="" widths={[220, 360, 520]} sizes="min(18vw, 15rem)" loading="eager" quality={80} />
+      </figure>
+    ))}
+  </div>
+</div>
+
+<style>
+  .hero-trail { position: absolute; inset: 0; z-index: 0; overflow: clip; pointer-events: none; }
+  .hero-trail__sources img { position: absolute; top: 0; left: 0; width: 1px; height: 1px; visibility: hidden; pointer-events: none; }
+  .hero-trail__stage { position: absolute; inset: 0; }
+  .hero-trail__item { position: absolute; top: 0; left: 0; width: clamp(9.5rem, 16vw, 14rem); margin: 0; opacity: 0; visibility: hidden; will-change: transform, opacity; }
+  .hero-trail__item:nth-child(3n + 1) { aspect-ratio: 4 / 5; }
+  .hero-trail__item:nth-child(3n + 2) { aspect-ratio: 1 / 1.18; }
+  .hero-trail__item:nth-child(3n) { aspect-ratio: 5 / 4; }
+  .hero-trail__item :global(img) { width: 100%; height: 100%; object-fit: cover; }
+  @media (hover: none), (pointer: coarse), (max-width: 63.99rem) { .hero-trail { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .hero-trail { display: none; } }
+</style>

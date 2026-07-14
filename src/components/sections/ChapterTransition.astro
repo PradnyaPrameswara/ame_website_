@@ -1,0 +1,25 @@
+---
+interface Props { number: string; label: string; target: string; }
+const { number, label, target } = Astro.props;
+---
+
+<section class="chapter-transition" id={target} data-chapter-transition aria-label={`Chapter ${number}: ${label}`}>
+  <div class="chapter-transition__rail">
+    <p data-chapter-label>{label}</p>
+    <span data-chapter-number>{number}</span>
+  </div>
+</section>
+
+<style>
+  .chapter-transition { position: relative; height: 62svh; padding: 0 var(--page-gutter); background: var(--white); }
+  .chapter-transition__rail { position: sticky; top: 0; display: grid; grid-template-columns: 1fr auto; align-items: end; height: 42svh; padding: 1.2rem 0; overflow: hidden; border-top: 1px solid var(--ink); }
+  .chapter-transition p { width: min(24rem, 44vw); font: 600 clamp(1.7rem, 3.2vw, 3.6rem)/.95 var(--font-body); letter-spacing: -.06em; text-transform: lowercase; }
+  .chapter-transition span { color: var(--accent); font: 780 clamp(4rem, 10vw, 11rem)/.7 var(--font-display); letter-spacing: -.08em; }
+  @media (min-width: 64rem) {
+    .chapter-transition { height: 5svh; }
+    .chapter-transition__rail { position: relative; height: 5svh; padding-block: .35rem; align-items: center; }
+    .chapter-transition p { width: auto; font-size: clamp(.75rem, 1.1vw, 1rem); line-height: 1; }
+    .chapter-transition span { font-size: clamp(1.6rem, 3vw, 2.8rem); line-height: .8; }
+  }
+  @media (max-width: 47.99rem) { .chapter-transition { height: 50svh; } .chapter-transition__rail { height: 35svh; } .chapter-transition p { width: 63vw; } }
+</style>
