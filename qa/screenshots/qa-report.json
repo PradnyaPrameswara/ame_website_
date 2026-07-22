@@ -7,96 +7,96 @@
           1440,
           900
         ],
-        "scrollHeight": 8326,
+        "scrollHeight": 8808,
         "htmlWidth": 1440,
         "bodyWidth": 1440,
         "heroHeight": 900,
         "menuDisplay": "none",
-        "desktopNavDisplay": "grid",
+        "desktopNavDisplay": null,
         "horizontalOffenders": [
-          {
-            "tag": "DIV",
-            "className": "create-menu",
-            "left": 1440,
-            "right": 2112,
-            "width": 672
-          },
-          {
-            "tag": "DIV",
-            "className": "create-menu__column",
-            "left": 1440,
-            "right": 1923.828125,
-            "width": 483.828125
-          },
-          {
-            "tag": "P",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1472,
-            "right": 1891.828125,
-            "width": 419.828125
-          },
           {
             "tag": "P",
             "className": "",
             "left": -40.80000305175781,
             "right": 727.1999969482422,
             "width": 768
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 712.7999877929688,
+            "right": 1480.800048828125,
+            "width": 768.0000610351562
+          },
+          {
+            "tag": "EM",
+            "className": "",
+            "left": 712.7999877929688,
+            "right": 1450.721923828125,
+            "width": 737.9219360351562
+          },
+          {
+            "tag": "P",
+            "className": "services-intro__word services-intro__word--what",
+            "left": -14.390625,
+            "right": 465.625,
+            "width": 480.015625
+          },
+          {
+            "tag": "H2",
+            "className": "services-stack__background-title",
+            "left": 36,
+            "right": 1581.34375,
+            "width": 1545.34375
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": -131.2209014892578,
+            "right": 778.3702850341797,
+            "width": 909.5911865234375
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": -85.60394287109375,
+            "right": -65.36013793945312,
+            "width": 20.243804931640625
+          },
+          {
+            "tag": "H3",
+            "className": "",
+            "left": -73.69927978515625,
+            "right": 416.7674560546875,
+            "width": 490.46673583984375
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": 654.076904296875,
+            "right": 1533.7396240234375,
+            "width": 879.6627197265625
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": -93.73957824707031,
+            "right": 785.9230804443359,
+            "width": 879.6626586914062
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": -50.59161376953125,
+            "right": -31.134902954101562,
+            "width": 19.456710815429688
+          },
+          {
+            "tag": "H3",
+            "className": "",
+            "left": -42.60447692871094,
+            "right": 432.87977600097656,
+            "width": 475.4842529296875
           }
         ]
       },
@@ -110,12 +110,12 @@
           390,
           844
         ],
-        "scrollHeight": 12600,
+        "scrollHeight": 12329,
         "htmlWidth": 390,
-        "bodyWidth": 390,
+        "bodyWidth": 398,
         "heroHeight": 844,
         "menuDisplay": "grid",
-        "desktopNavDisplay": "none",
+        "desktopNavDisplay": null,
         "horizontalOffenders": [
           {
             "tag": "P",
@@ -127,79 +127,79 @@
           {
             "tag": "ARTICLE",
             "className": "service-card swiper-slide service-card--blue swiper-slide-next",
-            "left": 328,
-            "right": 624,
-            "width": 296
+            "left": 318.390625,
+            "right": 588.78125,
+            "width": 270.390625
           },
           {
             "tag": "SPAN",
             "className": "service-card__number",
-            "left": 351.390625,
-            "right": 580.609375,
-            "width": 229.21875
+            "left": 341.78125,
+            "right": 545.390625,
+            "width": 203.609375
           },
           {
             "tag": "H3",
             "className": "",
-            "left": 351.390625,
-            "right": 600.609375,
-            "width": 249.21875
+            "left": 341.78125,
+            "right": 565.390625,
+            "width": 223.609375
           },
           {
             "tag": "P",
             "className": "",
-            "left": 351.390625,
-            "right": 600.609375,
-            "width": 249.21875
+            "left": 341.78125,
+            "right": 565.390625,
+            "width": 223.609375
           },
           {
             "tag": "UL",
             "className": "",
-            "left": 351.390625,
-            "right": 600.609375,
-            "width": 249.21875
+            "left": 341.78125,
+            "right": 565.390625,
+            "width": 223.609375
           },
           {
             "tag": "LI",
             "className": "",
-            "left": 351.390625,
+            "left": 341.78125,
+            "right": 420.34375,
+            "width": 78.5625
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 428.34375,
+            "right": 501.25,
+            "width": 72.90625
+          },
+          {
+            "tag": "LI",
+            "className": "",
+            "left": 341.78125,
             "right": 425.328125,
-            "width": 73.9375
-          },
-          {
-            "tag": "LI",
-            "className": "",
-            "left": 433.328125,
-            "right": 526.546875,
-            "width": 93.21875
-          },
-          {
-            "tag": "LI",
-            "className": "",
-            "left": 351.390625,
-            "right": 453.453125,
-            "width": 102.0625
+            "width": 83.546875
           },
           {
             "tag": "SPAN",
             "className": "service-card__corner",
-            "left": 502.375,
-            "right": 580.609375,
+            "left": 467.15625,
+            "right": 545.390625,
             "width": 78.234375
           },
           {
             "tag": "ARTICLE",
             "className": "service-card swiper-slide service-card--blue",
-            "left": 640,
-            "right": 936,
-            "width": 296
+            "left": 604.78125,
+            "right": 875.171875,
+            "width": 270.390625
           },
           {
             "tag": "SPAN",
             "className": "service-card__number",
-            "left": 663.390625,
-            "right": 892.609375,
-            "width": 229.21875
+            "left": 628.171875,
+            "right": 831.78125,
+            "width": 203.609375
           }
         ]
       },
@@ -218,12 +218,12 @@
           430,
           932
         ],
-        "scrollHeight": 13461,
+        "scrollHeight": 13233,
         "htmlWidth": 430,
-        "bodyWidth": 430,
+        "bodyWidth": 431,
         "heroHeight": 932,
         "menuDisplay": "grid",
-        "desktopNavDisplay": "none",
+        "desktopNavDisplay": null,
         "horizontalOffenders": [
           {
             "tag": "P",
@@ -235,79 +235,79 @@
           {
             "tag": "ARTICLE",
             "className": "service-card swiper-slide service-card--blue swiper-slide-next",
-            "left": 360,
-            "right": 688,
-            "width": 328
+            "left": 350.390625,
+            "right": 652.78125,
+            "width": 302.390625
           },
           {
             "tag": "SPAN",
             "className": "service-card__number",
-            "left": 383.390625,
-            "right": 644.609375,
-            "width": 261.21875
+            "left": 373.78125,
+            "right": 609.390625,
+            "width": 235.609375
           },
           {
             "tag": "H3",
             "className": "",
-            "left": 383.390625,
-            "right": 664.609375,
-            "width": 281.21875
+            "left": 373.78125,
+            "right": 629.390625,
+            "width": 255.609375
           },
           {
             "tag": "P",
             "className": "",
-            "left": 383.390625,
-            "right": 664.609375,
-            "width": 281.21875
+            "left": 373.78125,
+            "right": 629.390625,
+            "width": 255.609375
           },
           {
             "tag": "UL",
             "className": "",
-            "left": 383.390625,
-            "right": 664.609375,
-            "width": 281.21875
+            "left": 373.78125,
+            "right": 629.390625,
+            "width": 255.609375
           },
           {
             "tag": "LI",
             "className": "",
-            "left": 383.390625,
-            "right": 457.328125,
-            "width": 73.9375
+            "left": 373.78125,
+            "right": 452.34375,
+            "width": 78.5625
           },
           {
             "tag": "LI",
             "className": "",
-            "left": 465.328125,
-            "right": 558.546875,
-            "width": 93.21875
+            "left": 460.34375,
+            "right": 533.25,
+            "width": 72.90625
           },
           {
             "tag": "LI",
             "className": "",
-            "left": 383.390625,
-            "right": 485.453125,
-            "width": 102.0625
+            "left": 541.25,
+            "right": 624.796875,
+            "width": 83.546875
           },
           {
             "tag": "SPAN",
             "className": "service-card__corner",
-            "left": 566.375,
-            "right": 644.609375,
+            "left": 531.15625,
+            "right": 609.390625,
             "width": 78.234375
           },
           {
             "tag": "ARTICLE",
             "className": "service-card swiper-slide service-card--blue",
-            "left": 704,
-            "right": 1032,
-            "width": 328
+            "left": 668.78125,
+            "right": 971.171875,
+            "width": 302.390625
           },
           {
             "tag": "SPAN",
             "className": "service-card__number",
-            "left": 727.390625,
-            "right": 988.609375,
-            "width": 261.21875
+            "left": 692.171875,
+            "right": 927.78125,
+            "width": 235.609375
           }
         ]
       },
@@ -326,12 +326,12 @@
           768,
           1024
         ],
-        "scrollHeight": 16580,
+        "scrollHeight": 16527,
         "htmlWidth": 768,
         "bodyWidth": 768,
         "heroHeight": 1024,
         "menuDisplay": "grid",
-        "desktopNavDisplay": "none",
+        "desktopNavDisplay": null,
         "horizontalOffenders": [
           {
             "tag": "P",
@@ -357,96 +357,96 @@
           1024,
           768
         ],
-        "scrollHeight": 7115,
+        "scrollHeight": 7531,
         "htmlWidth": 1024,
         "bodyWidth": 1024,
         "heroHeight": 768,
         "menuDisplay": "none",
-        "desktopNavDisplay": "grid",
+        "desktopNavDisplay": null,
         "horizontalOffenders": [
-          {
-            "tag": "DIV",
-            "className": "create-menu",
-            "left": 1024,
-            "right": 1515.515625,
-            "width": 491.515625
-          },
-          {
-            "tag": "DIV",
-            "className": "create-menu__column",
-            "left": 1024,
-            "right": 1377.890625,
-            "width": 353.890625
-          },
-          {
-            "tag": "P",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1056,
-            "right": 1345.890625,
-            "width": 289.890625
-          },
           {
             "tag": "P",
             "className": "",
             "left": -33.796875,
             "right": 560.109375,
             "width": 593.90625
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 463.890625,
+            "right": 1057.796875,
+            "width": 593.90625
+          },
+          {
+            "tag": "EM",
+            "className": "",
+            "left": 463.890625,
+            "right": 1029.3125,
+            "width": 565.421875
+          },
+          {
+            "tag": "P",
+            "className": "services-intro__word services-intro__word--what",
+            "left": -10.234375,
+            "right": 331.109375,
+            "width": 341.34375
+          },
+          {
+            "tag": "H2",
+            "className": "services-stack__background-title",
+            "left": 25.59375,
+            "right": 1124.5,
+            "width": 1098.90625
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": -112.54611206054688,
+            "right": 550.9410705566406,
+            "width": 663.4871826171875
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": -77.95663452148438,
+            "right": -57.71284484863281,
+            "width": 20.243789672851562
+          },
+          {
+            "tag": "H3",
+            "className": "",
+            "left": -66.05197143554688,
+            "right": 288.7823486328125,
+            "width": 354.8343200683594
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": -3.3540725708007812,
+            "right": 452.61864471435547,
+            "width": 455.97271728515625
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": 467.6823425292969,
+            "right": 1103.4474792480469,
+            "width": 635.76513671875
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "service-card swiper-slide service-card--blue",
+            "left": -79.4613037109375,
+            "right": 556.2846069335938,
+            "width": 635.7459106445312
+          },
+          {
+            "tag": "SPAN",
+            "className": "service-card__number",
+            "left": -46.74397277832031,
+            "right": -27.287254333496094,
+            "width": 19.45671844482422
           }
         ]
       },
@@ -460,96 +460,40 @@
           1920,
           1080
         ],
-        "scrollHeight": 9973,
+        "scrollHeight": 10515,
         "htmlWidth": 1920,
         "bodyWidth": 1920,
         "heroHeight": 1080,
         "menuDisplay": "none",
-        "desktopNavDisplay": "grid",
+        "desktopNavDisplay": null,
         "horizontalOffenders": [
-          {
-            "tag": "DIV",
-            "className": "create-menu",
-            "left": 1920,
-            "right": 2592,
-            "width": 672
-          },
-          {
-            "tag": "DIV",
-            "className": "create-menu__column",
-            "left": 1920,
-            "right": 2403.828125,
-            "width": 483.828125
-          },
-          {
-            "tag": "P",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "A",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
-          {
-            "tag": "SPAN",
-            "className": "",
-            "left": 1952,
-            "right": 2371.828125,
-            "width": 419.828125
-          },
           {
             "tag": "P",
             "className": "",
             "left": -28.800003051757812,
             "right": 739.1999969482422,
             "width": 768
+          },
+          {
+            "tag": "P",
+            "className": "",
+            "left": 1180.800048828125,
+            "right": 1948.800048828125,
+            "width": 768
+          },
+          {
+            "tag": "P",
+            "className": "services-intro__word services-intro__word--what",
+            "left": -19.1875,
+            "right": 514.171875,
+            "width": 533.359375
+          },
+          {
+            "tag": "H2",
+            "className": "services-stack__background-title",
+            "left": 288,
+            "right": 2303.65625,
+            "width": 2015.65625
           }
         ]
       },
@@ -562,46 +506,46 @@
       "name": "story",
       "rect": {
         "x": 0,
-        "y": 170,
+        "y": -23,
         "width": 1440,
-        "height": 666,
-        "top": 170,
+        "height": 1125,
+        "top": -23,
         "right": 1440,
-        "bottom": 836,
+        "bottom": 1102,
         "left": 0
       },
-      "scrollY": 775,
-      "sectionBackground": "rgb(255, 255, 255)",
+      "scrollY": 968,
+      "sectionBackground": "rgb(217, 232, 245)",
       "sticky": {
-        "className": "story-poster__sticky",
+        "className": "about_home_kicker",
         "rect": {
-          "x": 36,
-          "y": 170,
-          "width": 1368,
-          "height": 666,
-          "top": 170,
-          "right": 1404,
-          "bottom": 836,
-          "left": 36
+          "x": 0,
+          "y": -23,
+          "width": 1440,
+          "height": 64,
+          "top": -23,
+          "right": 1440,
+          "bottom": 41,
+          "left": 0
         },
-        "background": "rgba(0, 0, 0, 0)"
+        "background": "rgb(246, 61, 24)"
       },
       "points": [
         {
           "y": 100,
-          "className": "hero__layout",
+          "className": "about_home_container u-container",
           "tag": "DIV",
           "background": "rgba(0, 0, 0, 0)"
         },
         {
           "y": 450,
           "className": "",
-          "tag": "H2",
+          "tag": "SPAN",
           "background": "rgba(0, 0, 0, 0)"
         },
         {
           "y": 800,
-          "className": "story-poster__sticky",
+          "className": "about_home_container u-container",
           "tag": "DIV",
           "background": "rgba(0, 0, 0, 0)"
         }
@@ -619,10 +563,10 @@
         "bottom": 972,
         "left": 0
       },
-      "scrollY": 2259,
+      "scrollY": 2718,
       "sectionBackground": "rgb(255, 255, 255)",
       "sticky": {
-        "className": "operations__sticky",
+        "className": "operations__sticky u-container",
         "rect": {
           "x": 36,
           "y": 72,
@@ -638,13 +582,13 @@
       "points": [
         {
           "y": 100,
-          "className": "operations__sticky",
+          "className": "operations__sticky u-container",
           "tag": "DIV",
           "background": "rgb(255, 255, 255)"
         },
         {
           "y": 450,
-          "className": "operations__sticky",
+          "className": "operations__sticky u-container",
           "tag": "DIV",
           "background": "rgb(255, 255, 255)"
         },
@@ -668,19 +612,19 @@
         "bottom": 1363,
         "left": 0
       },
-      "scrollY": 3488,
+      "scrollY": 3947,
       "sectionBackground": "rgb(255, 255, 255)",
       "sticky": {
-        "className": "clients__intro",
+        "className": "u-container",
         "rect": {
-          "x": 36,
+          "x": 0,
           "y": -132,
-          "width": 1368,
-          "height": 240.59375,
+          "width": 1440,
+          "height": 1162.921875,
           "top": -132,
-          "right": 1404,
-          "bottom": 108.59375,
-          "left": 36
+          "right": 1440,
+          "bottom": 1030.921875,
+          "left": 0
         },
         "background": "rgba(0, 0, 0, 0)"
       },
@@ -717,10 +661,10 @@
         "bottom": 711,
         "left": 0
       },
-      "scrollY": 4635,
+      "scrollY": 5094,
       "sectionBackground": "rgb(255, 255, 255)",
       "sticky": {
-        "className": "capabilities__sticky",
+        "className": "capabilities__sticky u-container",
         "rect": {
           "x": 36,
           "y": 261,
@@ -736,20 +680,20 @@
       "points": [
         {
           "y": 100,
-          "className": "client-showcase",
-          "tag": "DIV",
-          "background": "rgba(0, 0, 0, 0)"
+          "className": "clients",
+          "tag": "SECTION",
+          "background": "rgb(255, 255, 255)"
         },
         {
           "y": 450,
-          "className": "capabilities__sticky",
+          "className": "capabilities__sticky u-container",
           "tag": "DIV",
           "background": "rgb(255, 255, 255)"
         },
         {
           "y": 800,
           "className": "",
-          "tag": "H2",
+          "tag": "EM",
           "background": "rgba(0, 0, 0, 0)"
         }
       ]
@@ -758,26 +702,26 @@
       "name": "services-stack",
       "rect": {
         "x": 0,
-        "y": 27.484375,
+        "y": 27.28125,
         "width": 1440,
         "height": 1008,
-        "top": 27.484375,
+        "top": 27.28125,
         "right": 1440,
-        "bottom": 1035.484375,
+        "bottom": 1035.28125,
         "left": 0
       },
-      "scrollY": 5571,
+      "scrollY": 6053,
       "sectionBackground": "rgb(255, 255, 255)",
       "sticky": {
-        "className": "services-stack__sticky",
+        "className": "services-stack__sticky u-container",
         "rect": {
           "x": 0,
-          "y": 27.484375,
+          "y": 27.28125,
           "width": 1440,
           "height": 1008,
-          "top": 27.484375,
+          "top": 27.28125,
           "right": 1440,
-          "bottom": 1035.484375,
+          "bottom": 1035.28125,
           "left": 0
         },
         "background": "rgba(0, 0, 0, 0)"
@@ -807,17 +751,30 @@
       "name": "closing-cta",
       "rect": {
         "x": 0,
-        "y": 264.484375,
+        "y": 264.28125,
         "width": 1440,
         "height": 441.734375,
-        "top": 264.484375,
+        "top": 264.28125,
         "right": 1440,
-        "bottom": 706.21875,
+        "bottom": 706.015625,
         "left": 0
       },
-      "scrollY": 6720,
+      "scrollY": 7202,
       "sectionBackground": "rgb(255, 255, 255)",
-      "sticky": null,
+      "sticky": {
+        "className": "closing-cta__inner u-container",
+        "rect": {
+          "x": 0,
+          "y": 312.28125,
+          "width": 1440,
+          "height": 345.734375,
+          "top": 312.28125,
+          "right": 1440,
+          "bottom": 658.015625,
+          "left": 0
+        },
+        "background": "rgba(0, 0, 0, 0)"
+      },
       "points": [
         {
           "y": 100,
@@ -828,7 +785,7 @@
         {
           "y": 450,
           "className": "",
-          "tag": "EM",
+          "tag": "H2",
           "background": "rgba(0, 0, 0, 0)"
         },
         {
@@ -844,28 +801,28 @@
     {
       "name": "operations",
       "progress": 0.15,
-      "scrollY": 2331,
+      "scrollY": 2790,
       "items": [
         {
-          "text": "Numbers",
+          "text": "Timber",
           "transform": "matrix(1, 0, 0, 1, 0, -205.906)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Vendors",
-          "transform": "matrix(1, 0, 0, 1, 0, -59.4755)",
+          "text": "Textiles",
+          "transform": "matrix(1, 0, 0, 1, 0, -67.029)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Business Plans",
-          "transform": "matrix(1, 0, 0, 1, 0, 43.4777)",
+          "text": "Ceramics",
+          "transform": "matrix(1, 0, 0, 1, 0, 35.9241)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Scopes",
+          "text": "Joinery",
           "transform": "matrix(1, 0, 0, 1, 0, 205.906)",
           "opacity": "1",
           "visibility": "visible"
@@ -875,28 +832,28 @@
     {
       "name": "operations",
       "progress": 0.5,
-      "scrollY": 2331,
+      "scrollY": 2790,
       "items": [
         {
-          "text": "Numbers",
+          "text": "Timber",
           "transform": "matrix(1, 0, 0, 1, 0, -205.906)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Vendors",
+          "text": "Textiles",
           "transform": "matrix(1, 0, 0, 1, 0, -51.4766)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Business Plans",
+          "text": "Ceramics",
           "transform": "matrix(1, 0, 0, 1, 0, 51.4766)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Scopes",
+          "text": "Joinery",
           "transform": "matrix(1, 0, 0, 1, 0, 205.906)",
           "opacity": "1",
           "visibility": "visible"
@@ -906,28 +863,28 @@
     {
       "name": "operations",
       "progress": 0.85,
-      "scrollY": 2331,
+      "scrollY": 2790,
       "items": [
         {
-          "text": "Numbers",
+          "text": "Timber",
           "transform": "matrix(1, 0, 0, 1, 0, -205.906)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Vendors",
+          "text": "Textiles",
           "transform": "matrix(1, 0, 0, 1, 0, -51.4766)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Business Plans",
+          "text": "Ceramics",
           "transform": "matrix(1, 0, 0, 1, 0, 51.4766)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Scopes",
+          "text": "Joinery",
           "transform": "matrix(1, 0, 0, 1, 0, 205.906)",
           "opacity": "1",
           "visibility": "visible"
@@ -937,23 +894,23 @@
     {
       "name": "capabilities",
       "progress": 0.15,
-      "scrollY": 4829,
+      "scrollY": 5288,
       "items": [
         {
-          "text": "Film",
+          "text": "Form",
           "transform": "matrix(1, 0, 0, 1, 0, -142.553)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Logic",
+          "text": "Material",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Emotion",
-          "transform": "matrix(1, 0, 0, 1, 0, 76.2771)",
+          "text": "Living",
+          "transform": "matrix(1, 0, 0, 1, 0, 78.669)",
           "opacity": "1",
           "visibility": "visible"
         }
@@ -962,22 +919,22 @@
     {
       "name": "capabilities",
       "progress": 0.5,
-      "scrollY": 4671,
+      "scrollY": 5130,
       "items": [
         {
-          "text": "Film",
+          "text": "Form",
           "transform": "matrix(1, 0, 0, 1, 0, -142.553)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Logic",
+          "text": "Material",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Emotion",
+          "text": "Living",
           "transform": "matrix(1, 0, 0, 1, 0, 142.553)",
           "opacity": "1",
           "visibility": "visible"
@@ -987,22 +944,22 @@
     {
       "name": "capabilities",
       "progress": 0.85,
-      "scrollY": 4514,
+      "scrollY": 4973,
       "items": [
         {
-          "text": "Film",
-          "transform": "matrix(1, 0, 0, 1, 0, -74.2693)",
+          "text": "Form",
+          "transform": "matrix(1, 0, 0, 1, 0, -75.1696)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Logic",
+          "text": "Material",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "Emotion",
+          "text": "Living",
           "transform": "matrix(1, 0, 0, 1, 0, 142.553)",
           "opacity": "1",
           "visibility": "visible"
@@ -1012,29 +969,29 @@
     {
       "name": "services",
       "progress": 0.15,
-      "scrollY": 5614,
+      "scrollY": 6096,
       "items": [
         {
-          "text": "01Brand & CreativeWe fin",
+          "text": "01FurnitureConsidered pi",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "02Campaign & FilmWe tell",
+          "text": "02ObjectsSmall-batch ves",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "03Visual & ExperientialW",
-          "transform": "matrix(0.98283, 0.0117371, -0.0117371, 0.98283, 0, -4.34125)",
+          "text": "03InteriorsWarm, tactile",
+          "transform": "matrix(0.98283, 0.0117542, -0.0117542, 0.98283, 0, -4.34759)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "04Growth & PartnershipWe",
-          "transform": "matrix(0.982946, -0.0174079, 0.0174079, 0.982946, 0, -4.29176)",
+          "text": "04Custom WorkCollaborati",
+          "transform": "matrix(0.982945, -0.0174474, 0.0174474, 0.982945, 0, -4.30149)",
           "opacity": "1",
           "visibility": "visible"
         }
@@ -1043,29 +1000,29 @@
     {
       "name": "services",
       "progress": 0.5,
-      "scrollY": 5652,
+      "scrollY": 6134,
       "items": [
         {
-          "text": "01Brand & CreativeWe fin",
+          "text": "01FurnitureConsidered pi",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "02Campaign & FilmWe tell",
+          "text": "02ObjectsSmall-batch ves",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "03Visual & ExperientialW",
-          "transform": "matrix(0.984644, 0.0105092, -0.0105092, 0.984644, 0, -3.88018)",
+          "text": "03InteriorsWarm, tactile",
+          "transform": "matrix(0.984644, 0.0105298, -0.0105298, 0.984644, 0, -3.88779)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "04Growth & PartnershipWe",
-          "transform": "matrix(0.984878, -0.0155026, 0.0155026, 0.984878, 0, -3.81461)",
+          "text": "04Custom WorkCollaborati",
+          "transform": "matrix(0.984777, -0.0155492, 0.0155492, 0.984777, 0, -3.82646)",
           "opacity": "1",
           "visibility": "visible"
         }
@@ -1074,29 +1031,29 @@
     {
       "name": "services",
       "progress": 0.85,
-      "scrollY": 5690,
+      "scrollY": 6172,
       "items": [
         {
-          "text": "01Brand & CreativeWe fin",
+          "text": "01FurnitureConsidered pi",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "02Campaign & FilmWe tell",
+          "text": "02ObjectsSmall-batch ves",
           "transform": "matrix(1, 0, 0, 1, 0, 0)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "03Visual & ExperientialW",
-          "transform": "matrix(0.987362, 0.00867173, -0.00867173, 0.987362, 0, -3.1928)",
+          "text": "03InteriorsWarm, tactile",
+          "transform": "matrix(0.987362, 0.00868551, -0.00868551, 0.987362, 0, -3.19788)",
           "opacity": "1",
           "visibility": "visible"
         },
         {
-          "text": "04Growth & PartnershipWe",
-          "transform": "matrix(0.987517, -0.0127877, 0.0127877, 0.987517, 0, -3.13824)",
+          "text": "04Custom WorkCollaborati",
+          "transform": "matrix(0.987517, -0.0128273, 0.0128273, 0.987517, 0, -3.14797)",
           "opacity": "1",
           "visibility": "visible"
         }

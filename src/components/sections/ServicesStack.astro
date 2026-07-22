@@ -3,7 +3,7 @@ import { services } from "../../data/content";
 ---
 
 <section class="services-stack" id="services" aria-labelledby="services-title" data-services-stack>
-  <div class="services-stack__sticky">
+  <div class="services-stack__sticky page-container page-container--wide">
     <h2 class="services-stack__background-title" id="services-title">Our<br />Services</h2>
     <div class="services-stack__cards swiper" data-services-slider>
       <div class="swiper-wrapper">
@@ -24,8 +24,8 @@ import { services } from "../../data/content";
 <style>
   .services-stack { position: relative; background: var(--white); }
   .services-stack__sticky { position: relative; overflow: clip; }
-  .services-stack__background-title { position: absolute; inset: 5vh auto auto var(--page-gutter); color: #1717170d; font: 850 clamp(8rem, 23vw, 27rem)/.67 var(--font-display); letter-spacing: -.1em; text-transform: uppercase; }
-  .services-stack__cards { position: relative; width: min(88rem, calc(100% - 2 * var(--page-gutter))); container-type: inline-size; }
+  .services-stack__background-title { position: absolute; inset: 5vh auto auto 0; color: #1717170d; font: 850 clamp(8rem, 23vw, 27rem)/.67 var(--font-display); letter-spacing: -.1em; text-transform: uppercase; }
+  .services-stack__cards { position: relative; width: 100%; max-width: 88rem; container-type: inline-size; }
   .services-stack__cards .swiper-wrapper { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
   .service-card { position: relative; display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto 1fr auto auto; gap: 1.25rem; min-width: 0; padding: clamp(1.35rem, 2vw, 2.25rem); color: var(--ink); background: #d9e3e7; border: 1px solid #17171733; box-shadow: 0 1.5rem 4rem #17171718; transform-origin: 50% 100%; will-change: transform; }
   .service-card--blue { background: #d9e3e7; }
@@ -41,7 +41,7 @@ import { services } from "../../data/content";
     .service-card { min-height: 47svh; }
   }
   @media (max-width: 63.99rem) {
-    .services-stack { height: auto; padding: 7rem var(--page-gutter); overflow: clip; }
+    .services-stack { height: auto; padding-block: 7rem; overflow: clip; }
     .services-stack__sticky { display: block; height: auto; overflow: visible; }
     .services-stack__background-title { position: relative; inset: auto; margin-bottom: 4rem; }
     .services-stack__cards { width: 100%; }

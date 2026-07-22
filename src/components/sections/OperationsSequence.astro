@@ -4,18 +4,18 @@ import { operations } from "../../data/content";
 ---
 
 <section class="operations" aria-labelledby="operations-title" data-operations>
-  <div class="operations__sticky">
-    <p class="operations__intro" id="operations-title">Creative direction, to us, is hands-on. It means understanding what moves a story forward:</p>
+  <div class="operations__sticky page-container page-container--wide">
+    <p class="operations__intro" id="operations-title">Making furniture is hands-on. We understand every part that gives a piece its character:</p>
     <div class="operations__words" aria-live="off">
       {operations.map((word, index) => <span class:list={{ "is-active": index === 0 }} data-operation-word>{word}</span>)}
     </div>
-    <p class="operations__aside">(And logistics? That’s our love language, too.)</p>
-    <AnimatedLink href="#trust" label="See our work" />
+    <p class="operations__aside">(And careful construction? That matters just as much.)</p>
+    <AnimatedLink href="#trust" label="See the collection" />
   </div>
 </section>
 
 <style>
-  .operations { position: relative; height: calc(4 * 72svh); padding: 0 var(--page-gutter); background: var(--white); }
+  .operations { position: relative; height: calc(4 * 72svh); padding: 0; background: var(--white); }
   .operations__sticky { position: sticky; top: 0; display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: auto 1fr auto; gap: 2rem; height: 100svh; align-items: center; overflow: hidden; padding-block: 8vh; background: var(--white); }
   .operations__intro { align-self: start; max-width: 17rem; font-size: .78rem; line-height: 1.3; text-transform: uppercase; }
   .operations__words { position: relative; height: clamp(6rem, 13vw, 13rem); overflow: hidden; }
@@ -23,10 +23,7 @@ import { operations } from "../../data/content";
   .operations__words span.is-active { opacity: 1; visibility: visible; }
   .operations__aside { grid-column: 2; align-self: end; font-size: clamp(1.2rem, 2vw, 2.2rem); }
   .operations :global(.animated-link) { align-self: end; }
-  @media (min-width: 64rem) {
-    .operations { height: 100svh; }
-    .operations__sticky { position: relative; top: auto; height: 100svh; }
-  }
+
   @media (max-width: 63.99rem) {
     .operations { height: auto; padding-block: 7rem; }
     .operations__sticky { position: relative; top: auto; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; height: auto; min-height: 0; overflow: visible; padding-block: 0; }

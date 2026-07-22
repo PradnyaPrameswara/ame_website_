@@ -3,36 +3,34 @@ import AnimatedLink from "../ui/AnimatedLink.astro";
 ---
 
 <section class="manifesto editorial-copy" aria-labelledby="manifesto-title" data-manifesto>
-  <p class="eyebrow">Our point of view</p>
-  <h2 id="manifesto-title">WE TAKE PRIDE IN <span>CHALLENGING NORMS,</span> <strong>MAKING STORIES THAT <em>MATTER</em></strong></h2>
-  <p>and building work that performs because it refuses to behave.</p>
+  <div class="page-container page-container--wide">
+    <p class="eyebrow">Our point of view</p>
+    <h2 id="manifesto-title">WE MAKE ROOM FOR <span>THE EVERYDAY,</span> <strong>AND OBJECTS THAT <em>ENDURE</em></strong></h2>
+    <p>because the things we live with should become better with time.</p>
+  </div>
 </section>
 <section class="closing-cta" id="contact" aria-labelledby="closing-title" data-closing>
-  <p class="closing-cta__kicker">We’re ready when you are.</p>
-  <h2 id="closing-title">A GOOD IDEA<br />DESERVES TO<br /><em>GO ALL THE WAY.</em></h2>
-  <p class="closing-cta__support">We want to make important work, have a vision, and see it through.</p>
-  <AnimatedLink href="mailto:hello@ame-studio.example" label="Start a conversation" />
+  <div class="closing-cta__inner page-container page-container--wide">
+    <p class="closing-cta__kicker">Made to be lived with.</p>
+    <h2 id="closing-title">LET’S MAKE<br />SOMETHING<br /><em>LASTING.</em></h2>
+    <p class="closing-cta__support">For a home, hospitality space, or a special commission, AME makes pieces with presence and purpose.</p>
+    <AnimatedLink href="mailto:hello@ame-studio.example" label="Start a commission" />
+  </div>
 </section>
 
 <style>
-  .manifesto { min-height: 115svh; padding: 14rem var(--page-gutter); background: var(--white); }
+  .manifesto { min-height: 115svh; padding-block: 14rem; background: var(--white); }
   .manifesto h2 { margin-top: 6rem; font: 760 clamp(4rem, 10vw, 11.5rem)/.83 var(--font-display); letter-spacing: -.075em; text-transform: uppercase; }
   .manifesto h2 span { color: var(--soft); }
   .manifesto h2 em { color: var(--accent); font-family: var(--font-accent); font-weight: 400; text-transform: none; }
-  .manifesto > p:last-child { width: min(40rem, 52vw); margin: 4rem 0 0 auto; font: 500 clamp(1.6rem, 3vw, 3.4rem)/1 var(--font-body); letter-spacing: -.055em; }
-  .closing-cta { display: grid; grid-template-columns: 1fr 3fr; gap: 2rem; min-height: 105svh; padding: 10rem var(--page-gutter) 8rem; color: var(--ink); background: var(--white); }
+  .manifesto > div > p:last-child { width: min(40rem, 52%); margin: 4rem 0 0 auto; font: 500 clamp(1.6rem, 3vw, 3.4rem)/1 var(--font-body); letter-spacing: -.055em; }
+  .closing-cta { min-height: 105svh; padding-block: 10rem 8rem; color: var(--ink); background: var(--white); }
+  .closing-cta__inner { display: grid; grid-template-columns: 1fr 3fr; gap: 2rem; }
   .closing-cta__kicker { font-size: .72rem; text-transform: uppercase; }
   .closing-cta h2 { grid-column: 2; align-self: center; font: 800 clamp(4.4rem, 9.6vw, 11rem)/.78 var(--font-display); letter-spacing: -.08em; text-transform: uppercase; }
   .closing-cta h2 em { color: var(--accent); font-family: var(--font-accent); font-weight: 400; text-transform: none; }
   .closing-cta__support { grid-column: 2; width: min(33rem, 55%); font-size: clamp(1.2rem, 2vw, 2rem); line-height: 1.15; }
   .closing-cta :global(.animated-link) { grid-column: 2; align-self: end; }
-  @media (min-width: 64rem) {
-    .manifesto { min-height: 42svh; padding: 3rem var(--page-gutter); }
-    .manifesto h2 { margin-top: 1.5rem; font-size: clamp(2.8rem, 5.5vw, 6rem); }
-    .manifesto > p:last-child { margin-top: 1.25rem; font-size: clamp(1.1rem, 1.8vw, 1.8rem); }
-    .closing-cta { min-height: 42svh; padding: 3rem var(--page-gutter); }
-    .closing-cta h2 { font-size: clamp(2.8rem, 5.5vw, 6rem); }
-    .closing-cta__support { font-size: clamp(1rem, 1.5vw, 1.4rem); }
-  }
-  @media (max-width: 47.99rem) { .manifesto { min-height: 100svh; padding-block: 8rem; } .manifesto h2 { margin-top: 3rem; font-size: 14vw; } .manifesto > p:last-child { width: 82vw; } .closing-cta { grid-template-columns: 1fr; min-height: 90svh; padding-block: 7rem; } .closing-cta > * { grid-column: 1 !important; } .closing-cta h2 { font-size: 14vw; } .closing-cta__support { width: 90%; } }
+
+  @media (max-width: 47.99rem) { .manifesto { min-height: 100svh; padding-block: 8rem; } .manifesto h2 { margin-top: 3rem; font-size: 14vw; } .manifesto > div > p:last-child { width: 100%; } .closing-cta { min-height: 90svh; padding-block: 7rem; } .closing-cta__inner { grid-template-columns: 1fr; } .closing-cta__inner > * { grid-column: 1 !important; } .closing-cta h2 { font-size: 14vw; } .closing-cta__support { width: 100%; } }
 </style>

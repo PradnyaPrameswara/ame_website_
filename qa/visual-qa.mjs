@@ -51,8 +51,8 @@ for (const [name, width, height] of viewports) {
     htmlWidth: document.documentElement.scrollWidth,
     bodyWidth: document.body.scrollWidth,
     heroHeight: document.querySelector("[data-hero]")?.getBoundingClientRect().height,
-    menuDisplay: getComputedStyle(document.querySelector("[data-menu-toggle]")).display,
-    desktopNavDisplay: getComputedStyle(document.querySelector(".desktop-nav")).display,
+    menuDisplay: document.querySelector("[data-menu-toggle]") ? getComputedStyle(document.querySelector("[data-menu-toggle]")).display : null,
+    desktopNavDisplay: document.querySelector(".desktop-nav") ? getComputedStyle(document.querySelector(".desktop-nav")).display : null,
     horizontalOffenders: [...document.querySelectorAll("body *")].map((element) => {
       const rect = element.getBoundingClientRect();
       return { tag: element.tagName, className: element.className, left: rect.left, right: rect.right, width: rect.width };

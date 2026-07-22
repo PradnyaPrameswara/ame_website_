@@ -3,18 +3,20 @@ import { footerLinks } from "../../data/content";
 ---
 
 <footer class="site-footer" data-footer>
-  <a class="site-footer__collab" href="mailto:hello@ame-studio.example"><span>LET’S CREATE</span><span>TOGETHER ↗</span></a>
-  <div class="site-footer__grid">
-    <nav aria-label="Footer navigation">{footerLinks.map((item) => <a href={item.href}>{item.label.replace(",", "")}</a>)}</nav>
-    <div><span>Business enquiries</span><a href="mailto:hello@ame-studio.example">hello@ame-studio.example</a></div>
-    <div><span>Careers & collaborations</span><a href="mailto:people@ame-studio.example">people@ame-studio.example</a></div>
-    <div><span>Social</span><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+  <div class="page-container page-container--wide site-footer__inner">
+    <a class="site-footer__collab" href="mailto:hello@ame-studio.example"><span>LET’S MAKE</span><span>TOGETHER ↗</span></a>
+    <div class="site-footer__grid">
+      <nav aria-label="Footer navigation">{footerLinks.map((item) => <a href={item.href}>{item.label.replace(",", "")}</a>)}</nav>
+      <div><span>Commissions</span><a href="mailto:hello@ame-studio.example">hello@ame-studio.example</a></div>
+      <div><span>Trade & collaborations</span><a href="mailto:people@ame-studio.example">people@ame-studio.example</a></div>
+      <div><span>Social</span><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </div>
+    <div class="site-footer__legal"><span>© {new Date().getFullYear()} AME Studio</span><span>Furniture and objects</span><a href="#top">Back to top ↑</a></div>
   </div>
-  <div class="site-footer__legal"><span>© {new Date().getFullYear()} AME Studio</span><span>Original design & development</span><a href="#top">Back to top ↑</a></div>
 </footer>
 
 <style>
-  .site-footer { overflow: hidden; padding: 5rem var(--page-gutter) 1.5rem; color: var(--paper); background: #131410; }
+  .site-footer { overflow: hidden; padding-block: 5rem 1.5rem; color: var(--paper); background: #131410; }
   .site-footer__collab { display: grid; padding-bottom: 5rem; font: 850 clamp(4.8rem, 13.5vw, 15rem)/.72 var(--font-display); letter-spacing: -.09em; text-transform: uppercase; }
   .site-footer__collab span:last-child { justify-self: end; color: var(--accent); }
   .site-footer__grid { display: grid; grid-template-columns: 1fr 1.4fr 1.4fr 1fr; gap: 2rem; padding: 4rem 0; border-top: 1px solid #f2eee54d; }

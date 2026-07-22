@@ -3,36 +3,35 @@ import AnimatedLink from "../ui/AnimatedLink.astro";
 ---
 
 <section class="services-intro" aria-labelledby="services-intro-title">
-  <p class="services-intro__word services-intro__word--what" aria-hidden="true">What</p>
-  <p class="services-intro__word services-intro__word--we" aria-hidden="true">We</p>
-  <p class="services-intro__word services-intro__word--do" aria-hidden="true">Do</p>
-  <div class="services-intro__copy">
-    <h2 id="services-intro-title">Vision is nothing without execution. <em>We build both.</em></h2>
-    <p>We create campaigns, films, and the systems that get them made.</p>
-    <AnimatedLink href="#services" label="Our services" />
+  <div class="page-container page-container--wide services-intro__inner">
+    <p class="services-intro__word services-intro__word--what" aria-hidden="true">What</p>
+    <p class="services-intro__word services-intro__word--we" aria-hidden="true">We</p>
+    <p class="services-intro__word services-intro__word--do" aria-hidden="true">Do</p>
+    <div class="services-intro__copy">
+      <h2 id="services-intro-title">Useful forms deserve <em>beautiful making.</em></h2>
+      <p>Furniture, objects, and interiors made with an eye for detail and a respect for material.</p>
+      <AnimatedLink href="#services" label="What we make" />
+    </div>
   </div>
 </section>
 
 <style>
-  .services-intro { position: relative; min-height: 135svh; padding: 12rem var(--page-gutter); overflow: clip; background: var(--white); }
+  .services-intro { position: relative; min-height: 135svh; padding-block: 12rem; overflow: clip; background: var(--white); }
+  .services-intro__inner { position: relative; min-height: 100%; display: grid; }
   .services-intro__word { position: absolute; color: #17171710; font: 850 clamp(9rem, 24vw, 27rem)/.66 var(--font-display); letter-spacing: -.1em; text-transform: uppercase; }
-  .services-intro__word--what { top: 5vh; left: -1vw; }
-  .services-intro__word--we { top: 38vh; right: 8vw; }
-  .services-intro__word--do { bottom: 4vh; left: 19vw; }
-  .services-intro__copy { position: relative; z-index: 1; display: grid; width: min(58rem, 68vw); margin-left: auto; padding-top: 28vh; gap: 2rem; }
+  .services-intro__word--what { top: 5vh; left: -1%; }
+  .services-intro__word--we { top: 38vh; right: 8%; }
+  .services-intro__word--do { bottom: 4vh; left: 19%; }
+  .services-intro__copy { position: relative; z-index: 1; display: grid; width: min(58rem, 68%); margin-left: auto; padding-top: 28vh; gap: 2rem; }
   .services-intro h2 { font: 650 clamp(3.2rem, 6.5vw, 7.3rem)/.9 var(--font-display); letter-spacing: -.065em; text-transform: uppercase; }
   .services-intro h2 em { color: var(--accent); font-family: var(--font-accent); font-weight: 400; text-transform: none; }
   .services-intro__copy > p { width: min(28rem, 80%); margin-left: auto; font-size: clamp(1.1rem, 1.6vw, 1.7rem); }
   .services-intro :global(.animated-link) { margin-left: auto; }
   @media (min-width: 64rem) {
-    .services-intro { min-height: 25svh; padding-block: 2rem; }
-    .services-intro__word { font-size: clamp(5rem, 12vw, 12rem); }
     .services-intro__word--what { top: 0; }
     .services-intro__word--we { top: 3vh; }
     .services-intro__word--do { bottom: 0; }
-    .services-intro__copy { width: min(44rem, 58vw); padding-top: 0; gap: .8rem; }
-    .services-intro h2 { font-size: clamp(2rem, 3.6vw, 4rem); }
-    .services-intro__copy > p { font-size: .95rem; }
+    .services-intro__copy { padding-top: 0; }
   }
   @media (max-width: 47.99rem) { .services-intro { min-height: 100svh; padding-block: 7rem; } .services-intro__word { font-size: 30vw; } .services-intro__word--we { top: 29vh; } .services-intro__copy { width: 100%; padding-top: 32vh; } .services-intro h2 { font-size: 14vw; } }
 </style>

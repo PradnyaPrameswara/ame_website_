@@ -4,24 +4,24 @@ import { capabilities } from "../../data/content";
 ---
 
 <section class="capabilities" aria-labelledby="capabilities-title" data-capabilities>
-  <div class="capabilities__sticky">
+  <div class="capabilities__sticky page-container page-container--wide">
     <div class="capabilities__language">
-      <p>We are</p>
-      <h2 id="capabilities-title">multilingual</h2>
+      <p>We work in</p>
+      <h2 id="capabilities-title">craft</h2>
       <p>We speak</p>
     </div>
     <div class="capabilities__viewport">
       <div>{capabilities.map((word, index) => <span class:list={{ "is-active": index === 0 }} data-capability-word>{word}</span>)}</div>
     </div>
     <div class="capabilities__support">
-      <p>C-Suite and design. Spreadsheets and scripts. Our language is intentional, unique, and built to move clients towards their goals.</p>
-      <AnimatedLink href="#services" label="Our services" />
+      <p>Handwork and precision. Natural materials and practical use. Our language is tactile, warm, and made for daily life.</p>
+      <AnimatedLink href="#services" label="Explore AME" />
     </div>
   </div>
 </section>
 
 <style>
-  .capabilities { position: relative; height: calc(3 * 82svh); padding: 0 var(--page-gutter); background: var(--white); }
+  .capabilities { position: relative; height: calc(3 * 82svh); padding: 0; background: var(--white); }
   .capabilities__sticky { position: sticky; top: 0; display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: auto 1fr auto; gap: 1.5rem 3rem; height: 100svh; align-items: center; overflow: hidden; padding-block: 6vh; background: var(--white); }
   .capabilities__language { align-self: start; }
   .capabilities__language p { font-size: clamp(1rem, 1.6vw, 1.5rem); }
@@ -32,14 +32,7 @@ import { capabilities } from "../../data/content";
   .capabilities__viewport span.is-active { opacity: 1; visibility: visible; }
   .capabilities__support { grid-column: 2; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: end; }
   .capabilities__support p { max-width: 38rem; font-size: clamp(1.25rem, 2.2vw, 2.35rem); line-height: 1.08; letter-spacing: -.045em; }
-  @media (min-width: 64rem) {
-    .capabilities { height: 50svh; }
-    .capabilities__sticky { position: relative; top: auto; height: 50svh; padding-block: 2.5vh; }
-    .capabilities__language h2 { font-size: clamp(2.6rem, 5vw, 5rem); }
-    .capabilities__viewport { height: clamp(4.5rem, 9vw, 9rem); }
-    .capabilities__viewport span { font-size: clamp(4rem, 9vw, 9rem); }
-    .capabilities__support p { font-size: clamp(1rem, 1.5vw, 1.45rem); }
-  }
+
   @media (max-width: 63.99rem) {
     .capabilities { height: auto; padding-block: 7rem; }
     .capabilities__sticky { position: relative; top: auto; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; height: auto; overflow: visible; padding: 0; }

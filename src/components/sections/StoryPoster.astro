@@ -1,102 +1,330 @@
-<section
-  class="about_home_section"
-  aria-labelledby="about-home-heading"
-  data-about-heading-section
->
-  <div class="about_home_container">
-    <div class="about_home_text_mask">
-      <h2
-        class="about_home_heading"
-        id="about-home-heading"
-        data-about-heading
-      >
-        <span class="about_home_line">WE GREW FOR</span>{" "}
-        <span class="about_home_line">NINE YEARS</span>{" "}
-        <span class="about_home_line">WITHOUT A WEBSITE,</span>{" "}
-        <span class="about_home_line">BECAUSE WE DIDN’T</span>{" "}
-        <span class="about_home_line">NEED ONE</span>
-      </h2>
+---
+import { Image } from "astro:assets";
+import shapeStudio from "../../assets/images/shape-studio.png";
+import materialStudy from "../../assets/images/material-study.png";
+import silverField from "../../assets/images/silver-field.png";
+import kineticPortrait from "../../assets/images/kinetic-portrait.png";
+
+const headlineLines = [
+  "WE MAKE OBJECTS",
+  "FOR LIVING WELL,",
+  "WITH CARE,",
+  "MATERIAL, AND",
+  "PURPOSE",
+] as const;
+---
+
+<section class="chapter-section" id="beginning" aria-labelledby="chapter-one-title" data-chapter-one>
+  <div class="chapter-section__intro page-container page-container--wide">
+    <div class="chapter-section__banner" data-chapter-elem>
+      <span class="chapter-section__banner-title">The first thing you should know about us</span>
+      <span class="chapter-section__number" aria-hidden="true">01</span>
+    </div>
+  </div>
+
+  <!-- outer: provides scroll distance for clip-path reveal -->
+  <div class="chapter-story__outer" data-story-outer>
+    <!-- inner sticky stage: holds the centered composition -->
+    <div class="chapter-story__stage">
+      <!-- 4-image zig-zag panel -->
+      <div class="chapter-story__images" aria-hidden="true" data-story-images>
+        <figure class="chapter-story__image chapter-story__image--1" data-story-image="1">
+          <Image
+            src={shapeStudio}
+            alt=""
+            widths={[220, 320, 480]}
+            sizes="(max-width: 767px) 45vw, 15vw"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="chapter-story__image chapter-story__image--2" data-story-image="2">
+          <Image
+            src={kineticPortrait}
+            alt=""
+            widths={[220, 320, 480]}
+            sizes="(max-width: 767px) 45vw, 15vw"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="chapter-story__image chapter-story__image--3" data-story-image="3">
+          <Image
+            src={materialStudy}
+            alt=""
+            widths={[220, 320, 480]}
+            sizes="(max-width: 767px) 45vw, 15vw"
+            loading="lazy"
+          />
+        </figure>
+
+        <figure class="chapter-story__image chapter-story__image--4" data-story-image="4">
+          <Image
+            src={silverField}
+            alt=""
+            widths={[220, 320, 480]}
+            sizes="(max-width: 767px) 45vw, 15vw"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+
+      <!-- dual typography layers -->
+      <div class="chapter-story__text-wrap">
+        <div class="chapter-story__text" data-story-progress>
+          <!-- z-index 1: pale base -->
+          <div class="chapter-story__layer chapter-story__layer--base" aria-hidden="true">
+            {headlineLines.map((line) => <div class="chapter-story__line">{line}</div>)}
+          </div>
+          <!-- z-index 3: black clip-path reveal -->
+          <h2 id="chapter-one-title" class="chapter-story__layer chapter-story__layer--active" data-story-progress-active>
+            {headlineLines.map((line) => <div class="chapter-story__line">{line}</div>)}
+          </h2>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .about_home_section {
+  /* ─── SECTION SHELL ─────────────────────────────────────────── */
+  .chapter-section {
     position: relative;
+    background: var(--white);
+    color: var(--ink);
+    padding-bottom: 8rem;
+  }
+
+  /* ─── INTRO BANNER ──────────────────────────────────────────── */
+  .chapter-section__intro {
     display: flex;
-    min-height: 74svh;
+    justify-content: flex-end;
+    align-items: start;
+    padding-top: clamp(4rem, 10svh, 8rem);
+  }
+
+  .chapter-section__banner {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: clamp(48px, 8vh, 110px) clamp(16px, 2vw, 32px);
-    overflow: clip;
-    background: #fff;
+    width: min(100%, 42vw);
+    background: var(--accent);
+    color: var(--white);
+    padding: 1.25rem 2rem;
+    border-radius: 4px;
+    margin-top: 1rem;
   }
 
-  .about_home_container {
-    width: 100%;
+  .chapter-section__banner-title {
+    font: 750 clamp(0.9rem, 1.15vw, 1.25rem)/1 var(--font-primary);
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
   }
 
-  .about_home_text_mask {
+  .chapter-section__number {
+    font: 800 clamp(2rem, 2.8vw, 3.2rem)/0.9 var(--font-primary);
+    letter-spacing: -0.05em;
+  }
+
+  /* ─── OUTER SCROLL REGION ─────────────────────────────────── */
+  /* Provides scroll distance for the clip-path reveal animation  */
+  .chapter-story__outer {
+    min-height: 240svh;
+    position: relative;
+    margin-top: clamp(2rem, 6svh, 4rem);
+  }
+
+  /* ─── STICKY STAGE ─────────────────────────────────────────── */
+  /* Holds the composition fixed while outer scrolls past         */
+  .chapter-story__stage {
+    position: sticky;
+    top: 0;
     width: 100%;
+    height: 100svh;
     overflow: hidden;
   }
 
-  .about_home_heading {
-    width: min(94vw, 1500px);
-    margin: 0 auto;
-    color: #d9e3e9;
-    font-family: "Archivo Variable", "Arial Black", Arial, sans-serif;
-    font-size: clamp(56px, 7.4vw, 132px);
-    font-weight: 780;
-    line-height: .86;
-    letter-spacing: -.045em;
-    text-align: center;
-    text-transform: uppercase;
-    text-wrap: balance;
-    will-change: transform, opacity;
+  /* ─── IMAGE PANEL (desktop) ─────────────────────────────────── */
+  /* z-index 2 — between pale text (1) and active text (3) */
+  .chapter-story__images {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: clamp(5rem, 13vh, 7.375rem);
+    z-index: 2;
+    pointer-events: none;
   }
 
-  .about_home_line {
+  .chapter-story__image {
+    width: clamp(10rem, 15%, 12.8125rem);
+    aspect-ratio: 205 / 144;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .chapter-story__image img {
+    width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
   }
 
-  @media (max-width: 63.99rem) {
-    .about_home_section {
-      min-height: 72svh;
-    }
-
-    .about_home_heading {
-      width: 96vw;
-      font-size: clamp(52px, 8vw, 84px);
-      line-height: .89;
-    }
+  /* zig-zag: 1 & 3 left, 2 & 4 right */
+  .chapter-story__image--1 {
+    margin-inline-start: 5%;
   }
 
-  @media (max-width: 47.99rem) {
-    .about_home_section {
-      min-height: 68svh;
-      padding: clamp(48px, 8vh, 72px) 16px;
-    }
-
-    .about_home_heading {
-      width: 100%;
-      font-size: clamp(38px, 11vw, 64px);
-      line-height: .93;
-      letter-spacing: -.04em;
-      text-wrap: pretty;
-    }
-
-    .about_home_line {
-      display: inline;
-    }
-
+  .chapter-story__image--2 {
+    margin-inline-start: auto;
+    margin-inline-end: 2%;
   }
 
+  .chapter-story__image--3 {
+    margin-inline-start: 2%;
+  }
+
+  .chapter-story__image--4 {
+    margin-inline-start: auto;
+    margin-inline-end: 5%;
+  }
+
+  /* ─── TEXT WRAP ──────────────────────────────────────────────── */
+  .chapter-story__text-wrap {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .chapter-story__text {
+    position: relative;
+    width: min(calc(100% - (var(--page-gutter, 1.5rem) * 2)), 56.25rem);
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  /* ─── TYPOGRAPHY LAYERS ──────────────────────────────────────── */
+  .chapter-story__layer {
+    width: 100%;
+    margin: 0;
+    font-family: var(--font-display), Arial, sans-serif;
+    font-size: clamp(3.5rem, 5.1vw, 5.0625rem);
+    line-height: 0.9;
+    font-weight: 500;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  /* z-index 1: pale — visible behind images */
+  .chapter-story__layer--base {
+    position: relative;
+    z-index: 1;
+    color: #d9e3e7;
+  }
+
+  /* z-index 3: black — clip-path reveal above images */
+  .chapter-story__layer--active {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    color: #11110f;
+    clip-path: inset(0 0 100% 0);
+    will-change: clip-path;
+  }
+
+  /* ─── PREFERS-REDUCED-MOTION ─────────────────────────────────── */
   @media (prefers-reduced-motion: reduce) {
-    .about_home_heading {
-      opacity: 1 !important;
-      visibility: visible !important;
+    .chapter-story__layer--active {
+      clip-path: inset(0) !important;
+    }
+    .chapter-story__image {
       transform: none !important;
-      will-change: auto;
+    }
+  }
+
+  /* ─── TABLET (< 1024px) ──────────────────────────────────────── */
+  @media (max-width: 63.99rem) {
+    .chapter-section__intro {
+      flex-direction: column;
+      gap: 2rem;
+      padding-top: 6rem;
+    }
+
+    .chapter-section__banner {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .chapter-story__image {
+      width: clamp(9rem, 18%, 11rem);
+    }
+  }
+
+  /* ─── MOBILE (< 768px) ───────────────────────────────────────── */
+  @media (max-width: 47.99rem) {
+    /* remove sticky/outer scroll distance — simple flow on mobile */
+    .chapter-story__outer {
+      min-height: auto;
+    }
+
+    .chapter-story__stage {
+      position: relative;
+      top: auto;
+      height: auto;
+      overflow: visible;
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+
+    /* flat grid, no text overlap */
+    .chapter-story__images {
+      position: relative;
+      inset: auto;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      height: auto;
+      padding-block: 2rem;
+      pointer-events: auto;
+      z-index: 1;
+    }
+
+    .chapter-story__image {
+      width: 100%;
+      margin: 0 !important; /* override all margin-inline rules */
+      aspect-ratio: 4 / 3;
+    }
+
+    /* text layers become static, no overlap */
+    .chapter-story__text-wrap {
+      position: relative;
+      inset: auto;
+      pointer-events: auto;
+      padding-block: 2rem;
+    }
+
+    .chapter-story__layer {
+      font-size: clamp(2.5rem, 10vw, 3.25rem);
+    }
+
+    /* on mobile just show the dark text immediately */
+    .chapter-story__layer--active {
+      clip-path: inset(0) !important;
+    }
+
+    .chapter-story__layer--base {
+      display: none;
     }
   }
 </style>
